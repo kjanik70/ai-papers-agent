@@ -89,30 +89,30 @@ jobs:
               title: `📝 Weekly AI Papers Ready for Substack - ${date}`,
               body: `## 🤖 Weekly AI Papers Post Generated!
 
-**File:** \`${files[0]}\`
+          **File:** \`${files[0]}\`
 
-### 🎯 Ready to Publish to Substack
+          ### 🎯 Ready to Publish to Substack
 
-**Quick Steps:**
-1. **Copy the content below** 
-2. **Go to your Substack editor**
-3. **Paste and publish!**
-4. **Close this issue** when done
+          **Quick Steps:**
+          1. **Copy the content below** 
+          2. **Go to your Substack editor**
+          3. **Paste and publish!**
+          4. **Close this issue** when done
 
-### 🔗 Direct Links
-- [📄 View File](../../blob/main/${files[0]})
-- [📋 Raw Content](../../raw/main/${files[0]}) ← **Click this to copy easily**
+          ### 🔗 Direct Links
+          - [📄 View File](../../blob/main/${files[0]})
+          - [📋 Raw Content](../../raw/main/${files[0]}) ← **Click this to copy easily**
 
-### 📝 Content Ready for Substack
+          ### 📝 Content Ready for Substack
 
-\`\`\`markdown
-${content.length > 3000 ? content.substring(0, 3000) + '\n\n... [Content truncated - click Raw Content link above for full post]' : content}
-\`\`\`
+          \`\`\`markdown
+          ${content.length > 3000 ? content.substring(0, 3000) + '\n\n... [Content truncated - click Raw Content link above for full post]' : content}
+          \`\`\`
 
----
-🤖 *This issue is automatically created every Friday with your weekly AI papers analysis.*
+          ---
+          🤖 *This issue is automatically created every Friday with your weekly AI papers analysis.*
 
-**✅ Close this issue** after publishing to Substack.`,
+          **✅ Close this issue** after publishing to Substack.`,
               labels: ["weekly-post", "ready-to-publish"]
             });
           }
