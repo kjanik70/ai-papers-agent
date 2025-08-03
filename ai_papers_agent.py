@@ -32,74 +32,156 @@ class SocialMediaTracker:
         })
         
     def search_twitter_mentions(self, paper_title: str, arxiv_id: str) -> Dict[str, int]:
-        """Search for Twitter mentions using nitter instances"""
+        """Search for Twitter mentions using multiple nitter instances with fallbacks"""
         mentions_data = {'mentions': 0, 'replies': 0, 'likes': 0}
         
-        # Try multiple nitter instances
+        # Extended list of nitter instances (many are community-run)
         nitter_instances = [
-            'https://nitter.net',
+            'https://nitter.poast.org',
+            'https://nitter.privacydev.net',
+            'https://nitter.ktachibana.party',
+            'https://nitter.fdn.fr',
             'https://nitter.1d4.us',
-            'https://nitter.kavin.rocks'
+            'https://nitter.kavin.rocks',
+            'https://nitter.unixfox.eu',
+            'https://nitter.domain.glass'
         ]
         
+        # Shorter, more focused search terms to avoid timeouts
         search_terms = [
-            f'"{paper_title}"',
-            f'arxiv.org/abs/{arxiv_id}',
-            f'{arxiv_id}'
+            f'{arxiv_id}',  # Most specific first
+            f'arxiv.org/abs/{arxiv_id}'
         ]
         
-        for instance in nitter_instances:
+        successful_scrapes = 0
+        max_attempts = 3  # Limit attempts to avoid long waits
+        
+        for instance in nitter_instances[:max_attempts]:
             try:
+                logger.info(f"Trying Twitter search via {instance}")
                 for term in search_terms:
                     mentions = self._scrape_twitter_data(instance, term)
-                    mentions_data['mentions'] += mentions['mentions']
-                    mentions_data['replies'] += mentions['replies']
-                    mentions_data['likes'] += mentions['likes']
-                    time.sleep(1)  # Rate limiting
-                break  # If successful, don't try other instances
+                    if mentions['mentions'] > 0 or mentions['replies'] > 0 or mentions['likes'] > 0:
+                        mentions_data['mentions'] += mentions['mentions']
+                        mentions_data['replies'] += mentions['replies']
+                        mentions_data['likes'] += mentions['likes']
+                        successful_scrapes += 1
+                        logger.info(f"Found Twitter data via {instance}: {mentions}")
+                    time.sleep(2)  # Longer delay between requests
+                
+                if successful_scrapes > 0:
+                    break  # If we got some data, don't try more instances
+                    
             except Exception as e:
-                logger.warning(f"Failed to scrape {instance}: {e}")
+                logger.warning(f"Twitter scraping failed for {instance}: {str(e)[:100]}...")
                 continue
+        
+        if successful_scrapes == 0:
+            logger.warning("All Twitter/Nitter instances failed - using fallback scoring")
+            # Fallback: Use other metrics more heavily if Twitter fails
+            mentions_data = {'mentions': 0, 'replies': 0, 'likes': 0}
                 
         return mentions_data
     
     def _scrape_twitter_data(self, instance: str, search_term: str) -> Dict[str, int]:
-        """Scrape Twitter data from nitter instance"""
+        """Scrape Twitter data from nitter instance with better error handling"""
         try:
             url = f"{instance}/search?f=tweets&q={quote(search_term)}&since=7d"
-            response = self.session.get(url, timeout=10)
-            response.raise_for_status()
+            
+            # More aggressive timeout and retry settings
+            response = self.session.get(
+                url, 
+                timeout=15,  # Increased timeout
+                headers={
+                    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Accept-Encoding': 'gzip, deflate',
+                    'Connection': 'keep-alive',
+                }
+            )
+            
+            if response.status_code != 200:
+                logger.warning(f"HTTP {response.status_code} from {instance}")
+                return {'mentions': 0, 'replies': 0, 'likes': 0}
             
             soup = BeautifulSoup(response.content, 'html.parser')
-            tweets = soup.find_all('div', class_='timeline-item')
+            
+            # Look for various tweet container classes (nitter sites use different ones)
+            tweet_selectors = [
+                'div.timeline-item',
+                'div.tweet',
+                'article[data-testid="tweet"]',
+                '.tweet-content',
+                '.timeline-tweet'
+            ]
+            
+            tweets = []
+            for selector in tweet_selectors:
+                found_tweets = soup.select(selector)
+                if found_tweets:
+                    tweets = found_tweets
+                    break
+            
+            if not tweets:
+                logger.info(f"No tweets found with standard selectors on {instance}")
+                return {'mentions': 0, 'replies': 0, 'likes': 0}
             
             total_mentions = len(tweets)
             total_replies = 0
             total_likes = 0
             
-            for tweet in tweets:
-                # Extract reply count
-                reply_elem = tweet.find('div', class_='icon-comment')
-                if reply_elem and reply_elem.parent:
-                    reply_text = reply_elem.parent.get_text(strip=True)
-                    reply_count = self._extract_number(reply_text)
-                    total_replies += reply_count
+            # Try multiple selectors for engagement metrics
+            for tweet in tweets[:10]:  # Limit to first 10 to avoid timeouts
+                # Try different reply count selectors
+                reply_selectors = [
+                    'div.icon-comment',
+                    '.tweet-stat[title*="repl"]',
+                    '.tweet-replies',
+                    '[data-testid="reply"]'
+                ]
                 
-                # Extract like count
-                like_elem = tweet.find('div', class_='icon-heart')
-                if like_elem and like_elem.parent:
-                    like_text = like_elem.parent.get_text(strip=True)
-                    like_count = self._extract_number(like_text)
-                    total_likes += like_count
+                for selector in reply_selectors:
+                    reply_elem = tweet.select_one(selector)
+                    if reply_elem and reply_elem.parent:
+                        reply_text = reply_elem.parent.get_text(strip=True)
+                        reply_count = self._extract_number(reply_text)
+                        total_replies += reply_count
+                        break
+                
+                # Try different like count selectors
+                like_selectors = [
+                    'div.icon-heart',
+                    '.tweet-stat[title*="like"]',
+                    '.tweet-likes',
+                    '[data-testid="like"]'
+                ]
+                
+                for selector in like_selectors:
+                    like_elem = tweet.select_one(selector)
+                    if like_elem and like_elem.parent:
+                        like_text = like_elem.parent.get_text(strip=True)
+                        like_count = self._extract_number(like_text)
+                        total_likes += like_count
+                        break
             
-            return {
+            result = {
                 'mentions': total_mentions,
                 'replies': total_replies,
                 'likes': total_likes
             }
             
+            logger.info(f"Twitter scraping successful: {result}")
+            return result
+            
+        except requests.exceptions.Timeout:
+            logger.warning(f"Timeout connecting to {instance}")
+            return {'mentions': 0, 'replies': 0, 'likes': 0}
+        except requests.exceptions.ConnectionError:
+            logger.warning(f"Connection error to {instance}")
+            return {'mentions': 0, 'replies': 0, 'likes': 0}
         except Exception as e:
-            logger.error(f"Error scraping Twitter data: {e}")
+            logger.error(f"Error scraping Twitter data from {instance}: {str(e)[:100]}...")
             return {'mentions': 0, 'replies': 0, 'likes': 0}
     
     def search_reddit_mentions(self, paper_title: str, arxiv_id: str) -> Dict[str, int]:
@@ -656,18 +738,61 @@ class AIPapersAgent:
         return papers
     
     def calculate_social_score(self, paper: arxiv.Result) -> float:
-        """Calculate social media engagement score for a paper"""
+        """Calculate social media engagement score for a paper with resilient error handling"""
         logger.info(f"Calculating social score for: {paper.title[:50]}...")
         
-        # Get social media data
-        twitter_data = self.social_tracker.search_twitter_mentions(paper.title, paper.get_short_id())
-        reddit_data = self.social_tracker.search_reddit_mentions(paper.title, paper.get_short_id())
-        hn_data = self.social_tracker.search_hackernews_mentions(paper.title, paper.get_short_id())
-        github_data = self.social_tracker.search_github_mentions(paper.title, paper.get_short_id())
+        # Initialize scores
+        twitter_data = {'mentions': 0, 'replies': 0, 'likes': 0}
+        reddit_data = {'mentions': 0, 'replies': 0, 'likes': 0}
+        hn_data = {'mentions': 0, 'replies': 0, 'likes': 0}
+        github_data = {'mentions': 0, 'replies': 0, 'likes': 0}
         
-        # Calculate weighted score based on engagement metrics
-        # Focus on mentions, replies, and likes from last 7 days
-        score = (
+        # Try each platform with error recovery
+        platforms_attempted = 0
+        platforms_successful = 0
+        
+        # Twitter with timeout protection
+        try:
+            logger.info("Searching Twitter...")
+            twitter_data = self.social_tracker.search_twitter_mentions(paper.title, paper.get_short_id())
+            platforms_attempted += 1
+            if sum(twitter_data.values()) > 0:
+                platforms_successful += 1
+        except Exception as e:
+            logger.warning(f"Twitter search failed: {str(e)[:100]}...")
+        
+        # Reddit search
+        try:
+            logger.info("Searching Reddit...")
+            reddit_data = self.social_tracker.search_reddit_mentions(paper.title, paper.get_short_id())
+            platforms_attempted += 1
+            if sum(reddit_data.values()) > 0:
+                platforms_successful += 1
+        except Exception as e:
+            logger.warning(f"Reddit search failed: {str(e)[:100]}...")
+        
+        # Hacker News search
+        try:
+            logger.info("Searching Hacker News...")
+            hn_data = self.social_tracker.search_hackernews_mentions(paper.title, paper.get_short_id())
+            platforms_attempted += 1
+            if sum(hn_data.values()) > 0:
+                platforms_successful += 1
+        except Exception as e:
+            logger.warning(f"Hacker News search failed: {str(e)[:100]}...")
+        
+        # GitHub search
+        try:
+            logger.info("Searching GitHub...")
+            github_data = self.social_tracker.search_github_mentions(paper.title, paper.get_short_id())
+            platforms_attempted += 1
+            if sum(github_data.values()) > 0:
+                platforms_successful += 1
+        except Exception as e:
+            logger.warning(f"GitHub search failed: {str(e)[:100]}...")
+        
+        # Calculate weighted score with platform availability adjustment
+        base_score = (
             # Twitter engagement (weight: 3.0)
             (twitter_data['mentions'] * 10 + 
              twitter_data['replies'] * 5 + 
@@ -689,6 +814,14 @@ class AIPapersAgent:
              github_data['likes'] * 1) * 1.5
         )
         
+        # If some platforms failed, boost scores from successful platforms
+        if platforms_attempted > 0 and platforms_successful < platforms_attempted:
+            platform_boost = 1 + (0.2 * (platforms_attempted - platforms_successful))
+            score = base_score * platform_boost
+            logger.info(f"Applied platform failure boost: {platform_boost:.2f}x")
+        else:
+            score = base_score
+        
         total_engagement = (
             twitter_data['mentions'] + twitter_data['replies'] + twitter_data['likes'] +
             reddit_data['mentions'] + reddit_data['replies'] + reddit_data['likes'] +
@@ -696,7 +829,7 @@ class AIPapersAgent:
             github_data['mentions'] + github_data['replies'] + github_data['likes']
         )
         
-        logger.info(f"Social score: {score:.2f} (Total engagement: {total_engagement})")
+        logger.info(f"Social score: {score:.2f} (Total engagement: {total_engagement}, Platforms: {platforms_successful}/{platforms_attempted})")
         
         return score
     
