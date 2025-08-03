@@ -1,5 +1,11 @@
 {
-  "papers": [],
-  "last_updated": null,
-  "total_featured": 0
+  "papers": [
+    "2507.23726v1",
+    "2507.23554v1",
+    "2507.23773v1",
+    "2507.23589v1",
+    "2507.23740v1"
+  ],
+  "last_updated": "2025-08-03T01:46:01.961399",
+  "total_featured": 5
 }

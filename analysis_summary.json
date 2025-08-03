@@ -1,0 +1,51 @@
+{
+  "filename": "ai_papers_weekly_20250803.md",
+  "date": "2025-08-03T01:46:01.961213",
+  "paper_count": 5,
+  "categories": [
+    "cs.AI"
+  ],
+  "avg_score": 25.0,
+  "top_paper": {
+    "title": "SimuRA: Towards General Goal-Oriented Agent via Simulative Reasoning\n  Architecture with LLM-Based World Model",
+    "score": 25,
+    "url": "https://arxiv.org/abs/2507.23773v1"
+  },
+  "papers": [
+    {
+      "rank": 1,
+      "title": "SimuRA: Towards General Goal-Oriented Agent via Simulative Reasoning\n  Architecture with LLM-Based World Model",
+      "score": 25,
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2507.23773v1"
+    },
+    {
+      "rank": 2,
+      "title": "Rule2Text: Natural Language Explanation of Logical Rules in Knowledge\n  Graphs",
+      "score": 25,
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2507.23740v1"
+    },
+    {
+      "rank": 3,
+      "title": "Seed-Prover: Deep and Broad Reasoning for Automated Theorem Proving",
+      "score": 25,
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2507.23726v1"
+    },
+    {
+      "rank": 4,
+      "title": "Can LLM-Reasoning Models Replace Classical Planning? A Benchmark Study",
+      "score": 25,
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2507.23589v1"
+    },
+    {
+      "rank": 5,
+      "title": "DICE: Dynamic In-Context Example Selection in LLM Agents via Efficient\n  Knowledge Transfer",
+      "score": 25,
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2507.23554v1"
+    }
+  ]
+}
