@@ -31,57 +31,26 @@ class SocialMediaTracker:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         })
         
-    def search_twitter_mentions(self, paper_title: str, arxiv_id: str) -> Dict[str, int]:
-        """Search for Twitter mentions using multiple nitter instances with fallbacks"""
-        mentions_data = {'mentions': 0, 'replies': 0, 'likes': 0}
-        
-        # Extended list of nitter instances (many are community-run)
-        nitter_instances = [
-            'https://nitter.poast.org',
-            'https://nitter.privacydev.net',
-            'https://nitter.ktachibana.party',
-            'https://nitter.fdn.fr',
-            'https://nitter.1d4.us',
-            'https://nitter.kavin.rocks',
-            'https://nitter.unixfox.eu',
-            'https://nitter.domain.glass'
-        ]
-        
-        # Shorter, more focused search terms to avoid timeouts
-        search_terms = [
-            f'{arxiv_id}',  # Most specific first
-            f'arxiv.org/abs/{arxiv_id}'
-        ]
-        
-        successful_scrapes = 0
-        max_attempts = 3  # Limit attempts to avoid long waits
-        
-        for instance in nitter_instances[:max_attempts]:
-            try:
-                logger.info(f"Trying Twitter search via {instance}")
-                for term in search_terms:
-                    mentions = self._scrape_twitter_data(instance, term)
-                    if mentions['mentions'] > 0 or mentions['replies'] > 0 or mentions['likes'] > 0:
-                        mentions_data['mentions'] += mentions['mentions']
-                        mentions_data['replies'] += mentions['replies']
-                        mentions_data['likes'] += mentions['likes']
-                        successful_scrapes += 1
-                        logger.info(f"Found Twitter data via {instance}: {mentions}")
-                    time.sleep(2)  # Longer delay between requests
-                
-                if successful_scrapes > 0:
-                    break  # If we got some data, don't try more instances
-                    
-            except Exception as e:
-                logger.warning(f"Twitter scraping failed for {instance}: {str(e)[:100]}...")
-                continue
-        
-        if successful_scrapes == 0:
-            logger.warning("All Twitter/Nitter instances failed - using fallback scoring")
-            # Fallback: Use other metrics more heavily if Twitter fails
-            mentions_data = {'mentions': 0, 'replies': 0, 'likes': 0}
-                
-        return mentions_data
+def search_twitter_mentions(self, paper_title: str, arxiv_id: str) -> Dict[str, int]:
+    """Search for Twitter mentions using snscrape"""
+    mentions_data = {'mentions': 0, 'replies': 0, 'likes': 0}
+    search_queries = [arxiv_id, f'arxiv.org/abs/{arxiv_id}', paper_title]
+    try:
+        import snscrape.modules.twitter as sntwitter
+        for query in search_queries:
+            count = 0
+            for tweet in sntwitter.TwitterSearchScraper(f'"{query}" since:{(datetime.now()-timedelta(days=7)).strftime("%Y-%m-%d")}')
+            .get_items():
+                if count >= 100:  # Limit to 100 tweets per query to avoid long runtimes
+                    break
+                mentions_data['mentions'] += 1
+                mentions_data['replies'] += getattr(tweet, 'replyCount', 0)
+                mentions_data['likes'] += getattr(tweet, 'likeCount', 0)
+                count += 1
+            time.sleep(1)  # Gentle rate limiting
+    except Exception as e:
+        logger.warning(f"snscrape Twitter search failed: {e}")
+    return mentions_data
     
     def _scrape_twitter_data(self, instance: str, search_term: str) -> Dict[str, int]:
         """Scrape Twitter data from nitter instance with better error handling"""
