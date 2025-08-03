@@ -39,8 +39,7 @@ def search_twitter_mentions(self, paper_title: str, arxiv_id: str) -> Dict[str, 
         import snscrape.modules.twitter as sntwitter
         for query in search_queries:
             count = 0
-            for tweet in sntwitter.TwitterSearchScraper(f'"{query}" since:{(datetime.now()-timedelta(days=7)).strftime("%Y-%m-%d")}')
-            .get_items():
+            for tweet in sntwitter.TwitterSearchScraper(f'"{query}" since:{(datetime.now()-timedelta(days=7)).strftime("%Y-%m-%d")}').get_items():
                 if count >= 100:  # Limit to 100 tweets per query to avoid long runtimes
                     break
                 mentions_data['mentions'] += 1
