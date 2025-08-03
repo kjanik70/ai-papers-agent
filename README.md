@@ -1,8 +1,8 @@
 # AI Papers Agent 🤖📚
 
-**Automated weekly AI papers digest based on social media buzz - completely free!**
+**Automated weekly AI papers digest via GitHub Pages - completely free!**
 
-This intelligent agent automatically discovers and ranks AI research papers by their **social media engagement** over the past 7 days, then publishes the top 5 most discussed papers to your Substack. Unlike traditional academic ranking systems, this focuses on what the AI community is actually talking about right now.
+This intelligent agent automatically discovers and ranks AI research papers by their **social media engagement** over the past 7 days, then publishes the top 5 most discussed papers to a beautiful GitHub Pages site with RSS feed. No email setup required!
 
 ## ✨ Key Features
 
@@ -10,9 +10,11 @@ This intelligent agent automatically discovers and ranks AI research papers by t
 - 📊 **Multi-Platform Tracking**: Monitors Twitter/X, Reddit, Hacker News, and GitHub
 - 📈 **Engagement Metrics**: Counts mentions, replies, likes, upvotes, and stars
 - 🕒 **Age Agnostic**: Papers can be any age - only recent discussion matters
-- 📧 **Auto-Publishing**: Sends beautifully formatted digests to Substack
+- 🌐 **GitHub Pages**: Beautiful, responsive website automatically generated
+- 📡 **RSS Feed**: Subscribe with any feed reader for automatic updates
 - 🚫 **Duplicate Prevention**: Never repeats previously featured papers
-- 💰 **100% Free**: Runs entirely on free services and APIs
+- 💰 **100% Free**: Runs entirely on free GitHub services
+- 🔒 **No Credentials**: Zero email or API keys required
 - ⏰ **Automated**: Runs every Friday at 6 PM UTC via GitHub Actions
 
 ## 🚀 How It Works
@@ -21,8 +23,8 @@ This intelligent agent automatically discovers and ranks AI research papers by t
 2. **Social Media Scraping**: Searches for mentions across all platforms in last 7 days
 3. **Engagement Scoring**: Calculates weighted scores based on mentions, replies, and likes
 4. **Intelligent Ranking**: Sorts papers by total social engagement score
-5. **Content Generation**: Creates summaries and formats beautiful email
-6. **Auto-Publishing**: Sends to Substack and updates processed papers database
+5. **Content Generation**: Creates beautiful GitHub Pages site and RSS feed
+6. **Auto-Publishing**: Updates your website automatically via GitHub Actions
 
 ## 📊 Engagement Scoring System
 
@@ -46,41 +48,43 @@ Papers are ranked using social media engagement from the **last 7 days only**:
 
 ## 🛠️ Prerequisites
 
-- GitHub account
-- Gmail account with 2FA enabled
-- Substack publication
+- GitHub account (free)
+- That's it! No email setup or API keys required
 
 ## ⚙️ Setup Instructions
 
 ### 1. Fork the Repository
 Click the "Fork" button to create your own copy.
 
-### 2. Configure Gmail App Password
-1. Enable 2FA on Gmail: [Google Account Security](https://myaccount.google.com/security)
-2. Generate App Password: Security → App passwords
-3. Save the 16-character password
+### 2. Enable GitHub Pages
+1. Go to your forked repository
+2. Click Settings → Pages
+3. Source: Deploy from a branch
+4. Branch: main
+5. Folder: /docs
+6. Click Save
 
-### 3. Get Your Substack Email
-1. Substack Dashboard → Settings → Publication details
-2. Copy the email address (format: `yourname-123abc@substack.com`)
+### 3. Run the Agent
+1. Go to Actions → Weekly AI Papers
+2. Click "Run workflow" to test
+3. Check the Actions log for progress
 
-### 4. Set GitHub Secrets
-Go to Settings → Secrets and variables → Actions, add:
-
+### 4. View Your Site
+Your digest will be available at:
 ```
-GMAIL_EMAIL = your_gmail@gmail.com
-GMAIL_PASSWORD = your_16_character_app_password  
-SUBSTACK_EMAIL = yourname-123abc@substack.com
+https://your-username.github.io/ai-papers-agent/
 ```
 
-### 5. Test Your Setup
-1. Actions → Weekly AI Papers → Run workflow
-2. Check logs for any errors
-3. Verify Substack receives the digest
+RSS feed at:
+```
+https://your-username.github.io/ai-papers-agent/feed.xml
+```
 
-🎉 **Done!** Your agent runs automatically every Friday.
+🎉 **Done!** Your agent runs automatically every Friday and updates your site.
 
 ## 📄 Sample Output
+
+Your GitHub Pages site will look like this:
 
 ```
 🤖 Top 5 AI Papers This Week
@@ -93,17 +97,21 @@ Authors: OpenAI Research Team, et al.
 🔥 Social Engagement Score: 1,247.3
 
 This groundbreaking paper introduces GPT-5, featuring unprecedented 
-reasoning capabilities and multimodal understanding. The model 
-demonstrates significant improvements in mathematical reasoning...
+reasoning capabilities and multimodal understanding...
+
+📖 Read Full Paper | 📄 Download PDF
 
 🥈 #2. Quantum Neural Networks: A New Paradigm  
 Authors: Chen, Kumar, Williams, et al.
 🔥 Social Engagement Score: 892.1
 
 Researchers present a novel approach combining quantum computing 
-with neural networks, achieving exponential speedups on certain
-machine learning tasks...
+with neural networks...
+
+📖 Read Full Paper | 📄 Download PDF
 ```
+
+Plus a clean, responsive design that works on all devices!
 
 ## 🔧 Customization Options
 
@@ -156,7 +164,8 @@ top_papers = ranked_papers[:5]  # Top 5 papers
   - Hacker News Algolia API
   - GitHub API for repository mentions
 - **Database**: SQLite for duplicate prevention
-- **Email**: Gmail SMTP to Substack
+- **Output**: Static HTML, RSS XML, JSON API
+- **Hosting**: GitHub Pages (free)
 - **Rate Limiting**: Built-in delays to avoid blocking
 
 ## 📦 Dependencies
@@ -166,33 +175,29 @@ Core libraries used:
 - `requests` - HTTP requests for social media APIs
 - `beautifulsoup4` - HTML parsing for web scraping
 - `lxml` - Fast XML/HTML parsing
-- `sqlite3` - Database for tracking processed papers
-- `smtplib` - Email sending via Gmail
 - `urllib3` - URL handling and encoding
+- `python-dateutil` - Date parsing utilities
+
+*No email libraries or credentials required!*
 
 ## 🐛 Troubleshooting
 
 ### Common Issues
 
+**GitHub Pages not showing content**
+- Ensure Pages is enabled in Settings → Pages
+- Check that /docs folder exists in main branch
+- Wait 5-10 minutes for GitHub to build site
+
 **No papers with engagement found**
 - Social media platforms may be rate limiting
 - Try running at different times
-- Check if search terms are working
+- Check Actions logs for specific errors
 
-**Gmail authentication errors**  
-- Verify 2FA is enabled
-- Regenerate App Password
-- Check email/password in secrets
-
-**Substack not receiving emails**
-- Confirm Substack email format is correct
-- Check spam folder
-- Verify publication email in Substack settings
-
-**Social media scraping failures**
-- Some platforms may block requests
-- Agent will continue with available data
-- Check logs for specific error messages
+**Site not updating automatically**
+- Verify GitHub Actions is enabled
+- Check the workflow file in `.github/workflows/`
+- Ensure repository has Actions permissions
 
 ### Performance Metrics
 - **Processing Time**: 15-25 minutes per run
@@ -201,21 +206,27 @@ Core libraries used:
 - **Success Rate**: ~90% (depends on platform availability)
 - **Engagement Detection**: Real-time (last 7 days)
 
-## 🎯 What Makes This Different
+### GitHub Pages URLs
+- **Main Site**: `https://your-username.github.io/repository-name/`
+- **RSS Feed**: `https://your-username.github.io/repository-name/feed.xml`
+- **JSON API**: `https://your-username.github.io/repository-name/api.json`
 
-Traditional academic paper ranking focuses on:
-- Citation counts (slow to accumulate)
-- Journal prestige (gatekeeping)  
-- Author reputation (bias toward established researchers)
+## 🌟 Advantages of GitHub Pages Approach
 
-**Our social engagement ranking captures:**
-- ✅ Real-time community interest
-- ✅ Practical impact and applicability  
-- ✅ Discussion and debate volume
-- ✅ Cross-platform viral potential
-- ✅ Developer and practitioner adoption
+**vs Email/Substack:**
+- ✅ **No Credentials**: Zero setup complexity
+- ✅ **Always Available**: Never bounces or gets blocked
+- ✅ **SEO Friendly**: Google can index your content
+- ✅ **RSS Built-in**: Feed readers work automatically
+- ✅ **Professional**: Custom domain support
+- ✅ **Version Controlled**: Full history of all digests
 
-This gives you papers that are **actually making waves** in the AI community right now.
+**vs Other Platforms:**
+- ✅ **Free Forever**: GitHub Pages has no limits
+- ✅ **Fast Loading**: Static site performance
+- ✅ **Mobile Optimized**: Responsive design included
+- ✅ **Social Sharing**: Easy to link and embed
+- ✅ **Developer Friendly**: JSON API included
 
 ## 🤝 Contributing
 
