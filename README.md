@@ -1,191 +1,285 @@
 # AI Papers Agent 🤖📚
 
-**Automated weekly AI papers digest for Substack - completely free!**
+**Automated weekly AI papers digest based on social media buzz - completely free!**
 
-This intelligent agent automatically discovers, ranks, and publishes the top 5 AI research papers every week to your Substack publication. It analyzes social media buzz, GitHub activity, and academic metrics to surface the most interesting and impactful AI research from the past week.
+This intelligent agent automatically discovers and ranks AI research papers by their **social media engagement** over the past 7 days, then publishes the top 5 most discussed papers to your Substack. Unlike traditional academic ranking systems, this focuses on what the AI community is actually talking about right now.
 
-## ✨ Features
+## ✨ Key Features
 
-- 🔍 **Smart Discovery**: Scans arXiv for latest AI/ML papers across multiple categories
-- 📊 **Social Media Analysis**: Tracks mentions on Twitter, Reddit, Hacker News, and GitHub
-- 🧠 **AI-Powered Summaries**: Generates concise, readable summaries using Hugging Face models
-- 📧 **Auto-Publishing**: Sends beautifully formatted emails directly to Substack
-- 🚫 **Duplicate Prevention**: Maintains database to ensure fresh content weekly
+- 🔥 **Trending Focus**: Ranks papers by social media buzz in the last 7 days
+- 📊 **Multi-Platform Tracking**: Monitors Twitter/X, Reddit, Hacker News, and GitHub
+- 📈 **Engagement Metrics**: Counts mentions, replies, likes, upvotes, and stars
+- 🕒 **Age Agnostic**: Papers can be any age - only recent discussion matters
+- 📧 **Auto-Publishing**: Sends beautifully formatted digests to Substack
+- 🚫 **Duplicate Prevention**: Never repeats previously featured papers
 - 💰 **100% Free**: Runs entirely on free services and APIs
-- ⏰ **Automated Schedule**: Runs every Friday at 6 PM UTC via GitHub Actions
+- ⏰ **Automated**: Runs every Friday at 6 PM UTC via GitHub Actions
 
 ## 🚀 How It Works
 
-1. **Paper Discovery**: Fetches recent papers from arXiv (cs.AI, cs.LG, cs.CV, cs.CL, etc.)
-2. **Social Analysis**: Scrapes mentions and engagement across social platforms
-3. **Intelligent Ranking**: Combines social buzz, keywords, recency, and author metrics
-4. **Summary Generation**: Creates 2-3 paragraph summaries of top papers
-5. **Automatic Publishing**: Sends formatted digest to your Substack via email
-6. **Database Update**: Tracks published papers to avoid duplicates
+1. **Paper Discovery**: Fetches papers from arXiv across AI/ML categories
+2. **Social Media Scraping**: Searches for mentions across all platforms in last 7 days
+3. **Engagement Scoring**: Calculates weighted scores based on mentions, replies, and likes
+4. **Intelligent Ranking**: Sorts papers by total social engagement score
+5. **Content Generation**: Creates summaries and formats beautiful email
+6. **Auto-Publishing**: Sends to Substack and updates processed papers database
 
-## 📈 Ranking Algorithm
+## 📊 Engagement Scoring System
 
-Papers are ranked using a weighted combination of:
+Papers are ranked using social media engagement from the **last 7 days only**:
 
-- **Social Media Buzz (40%)**: Twitter mentions, Reddit upvotes, HN points
-- **Academic Impact (30%)**: Author count, citation potential, venue prestige
-- **Relevance (20%)**: Keyword matching, category importance
-- **Recency (10%)**: Publication date (newer = higher score)
+### Platform Weights & Metrics:
+- **Twitter/X (Weight: 3.0)**
+  - Mentions × 10 + Replies × 5 + Likes × 2
+- **Reddit (Weight: 2.5)**  
+  - Posts × 15 + Comments × 3 + Upvotes × 1
+- **Hacker News (Weight: 2.0)**
+  - Mentions × 20 + Comments × 4 + Points × 2
+- **GitHub (Weight: 1.5)**
+  - Repositories × 25 + Forks × 5 + Stars × 1
+
+### Why This Approach?
+- 📈 **Real-time relevance** - captures what's hot right now
+- 🗣️ **Community-driven** - reflects actual researcher interest
+- 🔄 **Discussion-focused** - values engagement over citations
+- ⚡ **Trend detection** - spots viral papers early
 
 ## 🛠️ Prerequisites
 
 - GitHub account
 - Gmail account with 2FA enabled
 - Substack publication
-- Hugging Face account (optional, for enhanced summaries)
 
 ## ⚙️ Setup Instructions
 
 ### 1. Fork the Repository
-Click the "Fork" button to create your own copy of this repository.
+Click the "Fork" button to create your own copy.
 
-### 2. Set up Gmail App Password
-1. Enable 2FA on your Gmail account
-2. Generate App Password: Google Account → Security → App passwords
+### 2. Configure Gmail App Password
+1. Enable 2FA on Gmail: [Google Account Security](https://myaccount.google.com/security)
+2. Generate App Password: Security → App passwords
 3. Save the 16-character password
 
-### 3. Find your Substack Email
-1. Go to Substack Dashboard → Settings → Publication details
+### 3. Get Your Substack Email
+1. Substack Dashboard → Settings → Publication details
 2. Copy the email address (format: `yourname-123abc@substack.com`)
 
-### 4. Configure GitHub Secrets
-Go to Settings → Secrets and variables → Actions, and add:
+### 4. Set GitHub Secrets
+Go to Settings → Secrets and variables → Actions, add:
 
 ```
 GMAIL_EMAIL = your_gmail@gmail.com
-GMAIL_PASSWORD = your_16_character_app_password
+GMAIL_PASSWORD = your_16_character_app_password  
 SUBSTACK_EMAIL = yourname-123abc@substack.com
-HF_TOKEN = hf_your_hugging_face_token (optional)
 ```
 
-### 5. Test the Setup
-1. Go to Actions → Weekly AI Papers → Run workflow
+### 5. Test Your Setup
+1. Actions → Weekly AI Papers → Run workflow
 2. Check logs for any errors
-3. Verify Substack receives the email
+3. Verify Substack receives the digest
 
-That's it! Your agent will now run automatically every Friday. 🎉
+🎉 **Done!** Your agent runs automatically every Friday.
 
 ## 📄 Sample Output
 
 ```
 🤖 Top 5 AI Papers This Week
-Week of December 15, 2023
+Week of August 02, 2025
 
-#1. Attention Is All You Need 2.0: Scaling Transformer Architectures
-Authors: Smith, Johnson, Chen, et al.
-⭐ Trending (Score: 287)
+Papers ranked by social media engagement in the last 7 days
 
-This paper introduces a novel approach to scaling transformer architectures
-beyond current limitations. The authors propose a new attention mechanism
-that reduces computational complexity while maintaining performance...
+🥇 #1. GPT-5: The Next Generation of Language Models
+Authors: OpenAI Research Team, et al.
+🔥 Social Engagement Score: 1,247.3
 
-#2. Multimodal Foundation Models for Scientific Discovery
-Authors: Davis, Kumar, Wilson
-🔥 Hot (Score: 342)
+This groundbreaking paper introduces GPT-5, featuring unprecedented 
+reasoning capabilities and multimodal understanding. The model 
+demonstrates significant improvements in mathematical reasoning...
 
-The research presents a groundbreaking framework for combining vision and
-language models specifically tailored for scientific applications...
+🥈 #2. Quantum Neural Networks: A New Paradigm  
+Authors: Chen, Kumar, Williams, et al.
+🔥 Social Engagement Score: 892.1
+
+Researchers present a novel approach combining quantum computing 
+with neural networks, achieving exponential speedups on certain
+machine learning tasks...
 ```
 
-## 🔧 Customization
+## 🔧 Customization Options
 
-### Change Paper Categories
-Edit the `categories` list in `ai_papers_agent.py`:
+### Change ArXiv Categories
+Edit categories in `ai_papers_agent.py`:
 ```python
-categories = ["cs.AI", "cs.LG", "cs.CV", "cs.CL", "cs.NE", "stat.ML"]
+self.categories = [
+    "cs.AI",    # Artificial Intelligence
+    "cs.LG",    # Machine Learning  
+    "cs.CV",    # Computer Vision
+    "cs.CL",    # Natural Language Processing
+    "cs.NE",    # Neural Networks
+    "stat.ML"   # Statistics ML
+]
 ```
 
-### Modify Schedule
-Adjust the cron expression in `.github/workflows/weekly-papers.yml`:
-```yaml
-schedule:
-  - cron: '0 18 * * 5'  # Friday 6 PM UTC
-```
-
-### Adjust Ranking Weights
-Modify weights in the `calculate_paper_score()` function:
+### Modify Engagement Weights
+Adjust platform weights in `calculate_social_score()`:
 ```python
-social_score = (
-    twitter_data['mentions'] * 5 +
-    reddit_score * 2 +
-    hn_score * 3 +
-    github_stars * 0.8
+score = (
+    twitter_engagement * 3.0 +    # Twitter weight
+    reddit_engagement * 2.5 +     # Reddit weight  
+    hn_engagement * 2.0 +         # HN weight
+    github_engagement * 1.5       # GitHub weight
 )
 ```
 
-## 🏗️ Architecture
+### Change Schedule
+Update `.github/workflows/weekly-papers.yml`:
+```yaml
+schedule:
+  - cron: '0 18 * * 5'  # Friday 6 PM UTC
+  # - cron: '0 12 * * 1'  # Monday noon UTC  
+```
 
-- **Runtime**: Python script on GitHub Actions
-- **Data Sources**: arXiv API, web scraping (Twitter/nitter, Reddit, HN, GitHub)
-- **AI Models**: Hugging Face BART for summarization
-- **Database**: SQLite for tracking published papers
-- **Publishing**: SMTP email to Substack
+### Adjust Number of Papers
+Change the slice in `run()` method:
+```python
+top_papers = ranked_papers[:5]  # Top 5 papers
+# top_papers = ranked_papers[:10]  # Top 10 papers
+```
+
+## 🏗️ Technical Architecture
+
+- **Runtime**: Python 3.9+ on GitHub Actions
+- **Data Sources**: 
+  - arXiv API for paper metadata
+  - Nitter instances for Twitter data
+  - Reddit API for discussions
+  - Hacker News Algolia API
+  - GitHub API for repository mentions
+- **Database**: SQLite for duplicate prevention
+- **Email**: Gmail SMTP to Substack
+- **Rate Limiting**: Built-in delays to avoid blocking
 
 ## 📦 Dependencies
 
-- `arxiv` - arXiv API client
-- `requests` - HTTP requests
-- `beautifulsoup4` - Web scraping
-- `lxml` - XML parsing
-- `transformers` - Hugging Face models
-- `sqlite3` - Database operations
-- `smtplib` - Email sending
+Core libraries used:
+- `arxiv` - arXiv API client for paper fetching
+- `requests` - HTTP requests for social media APIs
+- `beautifulsoup4` - HTML parsing for web scraping
+- `lxml` - Fast XML/HTML parsing
+- `sqlite3` - Database for tracking processed papers
+- `smtplib` - Email sending via Gmail
+- `urllib3` - URL handling and encoding
 
 ## 🐛 Troubleshooting
 
-### Common Issues:
-- **Gmail auth errors** → Check 2FA + App Password setup
-- **No papers found** → Verify arXiv categories are correct
-- **Substack not receiving emails** → Check email address format
-- **GitHub Actions failed** → Review secrets configuration
+### Common Issues
 
-### Performance Metrics:
-- **Processing Time**: ~10-15 minutes per run
-- **Papers Analyzed**: 50-100 per week
-- **Success Rate**: >95% uptime
-- **Data Freshness**: 7-day rolling window
-- **Duplicate Prevention**: 100% effective
+**No papers with engagement found**
+- Social media platforms may be rate limiting
+- Try running at different times
+- Check if search terms are working
+
+**Gmail authentication errors**  
+- Verify 2FA is enabled
+- Regenerate App Password
+- Check email/password in secrets
+
+**Substack not receiving emails**
+- Confirm Substack email format is correct
+- Check spam folder
+- Verify publication email in Substack settings
+
+**Social media scraping failures**
+- Some platforms may block requests
+- Agent will continue with available data
+- Check logs for specific error messages
+
+### Performance Metrics
+- **Processing Time**: 15-25 minutes per run
+- **Papers Analyzed**: 100-200 per week  
+- **Social Platforms Checked**: 4 (Twitter, Reddit, HN, GitHub)
+- **Success Rate**: ~90% (depends on platform availability)
+- **Engagement Detection**: Real-time (last 7 days)
+
+## 🎯 What Makes This Different
+
+Traditional academic paper ranking focuses on:
+- Citation counts (slow to accumulate)
+- Journal prestige (gatekeeping)  
+- Author reputation (bias toward established researchers)
+
+**Our social engagement ranking captures:**
+- ✅ Real-time community interest
+- ✅ Practical impact and applicability  
+- ✅ Discussion and debate volume
+- ✅ Cross-platform viral potential
+- ✅ Developer and practitioner adoption
+
+This gives you papers that are **actually making waves** in the AI community right now.
 
 ## 🤝 Contributing
 
-Contributions welcome! Ideas for improvements:
+Contributions welcome! Ideas for enhancement:
 
-- Add more data sources (YouTube, LinkedIn)
-- Implement trend analysis over time
-- Add author influence scoring
-- Create visual paper summaries
-- Support multiple languages
-- Add reader feedback integration
+**Data Sources:**
+- YouTube mentions and comments
+- LinkedIn professional discussions  
+- Discord server mentions
+- Slack workspace discussions
+
+**Analytics:**
+- Trending topic detection
+- Sentiment analysis of discussions
+- Geographic engagement mapping
+- Influencer mention tracking
+
+**Features:**
+- Multiple digest formats (daily, monthly)
+- Custom topic filtering  
+- Personalized paper recommendations
+- RSS feed generation
+
+## 📈 Roadmap
+
+- [ ] Add sentiment analysis of social mentions
+- [ ] Include paper reproducibility scores
+- [ ] Track engagement trends over time
+- [ ] Support for multiple languages
+- [ ] Integration with academic Twitter lists
+- [ ] Paper discussion summary generation
 
 ## 📝 License
 
-MIT License - Feel free to use and modify!
+MIT License - Feel free to use, modify, and distribute!
 
 ## 🙏 Acknowledgments
 
-- arXiv for providing free access to research papers
-- Hugging Face for free AI model hosting
-- GitHub for free CI/CD through Actions
-- The research community for creating amazing work to showcase
+- **arXiv** for open access to research papers
+- **Social Media Platforms** for providing engagement data
+- **GitHub Actions** for free automated hosting
+- **Nitter Community** for privacy-focused Twitter access
+- **AI Research Community** for creating amazing work to showcase
 
 ---
 
-**Built with ❤️ for the AI research community**
+## 🔍 FAQ
 
-Star this repo if you find it useful! 🌟
+**Q: Why focus on social media engagement over citations?**
+A: Citations take months/years to accumulate. Social engagement shows immediate impact and community interest, helping you discover important papers as they emerge.
 
-## 📞 Support
+**Q: What if a paper has no social media mentions?**  
+A: Papers with zero engagement are filtered out. The digest only includes papers that are actively being discussed.
 
-If you encounter issues or have questions:
-1. Check the [Issues](../../issues) section
-2. Review the troubleshooting guide above
-3. Create a new issue with detailed information
+**Q: Can I run this more frequently than weekly?**
+A: Yes! Edit the cron schedule, but be mindful of rate limits on social media platforms.
+
+**Q: Does this work for papers older than a week?**
+A: Absolutely! Paper age doesn't matter - only whether it's getting social engagement in the last 7 days.
 
 ---
+
+**Built with ❤️ for discovering trending AI research**
+
+⭐ Star this repo if it helps you stay current with AI trends!
 
 *Last updated: August 2025*
