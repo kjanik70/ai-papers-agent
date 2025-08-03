@@ -5,92 +5,93 @@ Welcome to this week's roundup of the most impactful AI research papers! These p
 
 **📊 This Week's Stats:**
 - 📄 **5 featured papers** from **1 categories**  
-- 👥 **56 contributing authors**
+- 👥 **35 contributing authors**
 - 🔥 **Average engagement score:** 25.0
 - 🏆 **Highest scorer:** 25 points
 
 ---
 
-## 1. SimuRA: Towards General Goal-Oriented Agent via Simulative Reasoning
-  Architecture with LLM-Based World Model
+## 1. A Unified Perception-Language-Action Framework for Adaptive Autonomous
+  Driving
 
 🧠 **Category:** CS.AI | 📅 **Published:** July 31, 2025 | 🔥 **Score:** 25 points
 
-**Authors:** Mingkai Deng, Jinyu Hou, Yilin Shen et al. (+4 more)
+**Authors:** Yi Zhang, Erik Leo Haß, Kuo-Yi Chao et al. (+4 more)
 
-**Links:** [ArXiv Paper](https://arxiv.org/abs/2507.23773v1) | [PDF Download](https://arxiv.org/pdf/2507.23773v1.pdf)
+**Links:** [ArXiv Paper](https://arxiv.org/abs/2507.23540v1) | [PDF Download](https://arxiv.org/pdf/2507.23540v1.pdf)
 
-AI agents built on large language models (LLMs) hold enormous promise, but current practice focuses on a one-task-one-agent approach, which not only falls short of scalability and generality, but also suffers from the fundamental limitations of autoregressive LLMs.. On the other hand, humans are general agents who reason by mentally simulating the outcomes of their actions and plans..
+Autonomous driving systems face significant challenges in achieving human-like adaptability, robustness, and interpretability in complex, open-world environments.. These challenges stem from fragmented architectures, limited generalization to novel scenarios, and insufficient semantic extraction from perception..
 
-Moving towards a more general and powerful AI agent, we introduce SimuRA, a goal-oriented architecture for generalized agentic reasoning.. Based on a principled formulation of optimal agent in any environment, \modelname overcomes the limitations of autoregressive reasoning by introducing a world model for planning via simulation.. The generalized world model is implemented using LLM, which can flexibly plan in a wide range of environments using the concept-rich latent space of natural language.. Experiments on difficult web browsing tasks show that \modelname improves the success of flight search from 0\% to 32.2\%.. World-model-based planning, in particular, shows consistent advantage of up to 124\% over autoregressive planning, demonstrating the advantage of world model simulation as a reasoning paradigm..
+To address these limitations, we propose a unified Perception-Language-Action (PLA) framework that integrates multi-sensor fusion (cameras, LiDAR, radar) with a large language model (LLM)-augmented Vision-Language-Action (VLA) architecture, specifically a GPT-4.1-powered reasoning core.. This framework unifies low-level sensory processing with high-level contextual reasoning, tightly coupling perception with natural language-based semantic understanding and decision-making to enable context-aware, explainable, and safety-bounded autonomous driving..
 
-We are excited about the possibility for training a single, general agent model based on LLMs that can act superintelligently in all environments.. To start, we make SimuRA, a web-browsing agent built on \modelname with pretrained LLMs, available as a research demo for public testing..
+Evaluations on an urban intersection scenario with a construction zone demonstrate superior performance in trajectory tracking, speed prediction, and adaptive planning.. The results highlight the potential of language-augmented cognitive frameworks for advancing the safety, interpretability, and scalability of autonomous driving systems..
 
 ---
 
-## 2. Rule2Text: Natural Language Explanation of Logical Rules in Knowledge
-  Graphs
+## 2. MECAT: A Multi-Experts Constructed Benchmark for Fine-Grained Audio
+  Understanding Tasks
 
 🧠 **Category:** CS.AI | 📅 **Published:** July 31, 2025 | 🔥 **Score:** 25 points
 
-**Authors:** Nasim Shirvani-Mahdavi, Devin Wingfield, Amin Ghasemi et al. (+1 more)
+**Authors:** Yadong Niu, Tianzi Wang, Heinrich Dinkel et al. (+7 more)
 
-**Links:** [ArXiv Paper](https://arxiv.org/abs/2507.23740v1) | [PDF Download](https://arxiv.org/pdf/2507.23740v1.pdf)
+**Links:** [ArXiv Paper](https://arxiv.org/abs/2507.23511v1) | [PDF Download](https://arxiv.org/pdf/2507.23511v1.pdf)
 
-Knowledge graphs (KGs) often contain sufficient information to support the inference of new facts.. Identifying logical rules not only improves the completeness of a knowledge graph but also enables the detection of potential errors, reveals subtle data patterns, and enhances the overall capacity for reasoning and interpretation..
+While large audio-language models have advanced open-ended audio understanding, they still fall short of nuanced human-level comprehension.. This gap persists largely because current benchmarks, limited by data annotations and evaluation metrics, fail to reliably distinguish between generic and highly detailed model outputs..
 
-However, the complexity of such rules, combined with the unique labeling conventions of each KG, can make them difficult for humans to understand.. In this paper, we explore the potential of large language models to generate natural language explanations for logical rules.. Specifically, we extract logical rules using the AMIE 3.5.1 rule discovery algorithm from the benchmark dataset FB15k-237 and two large-scale datasets, FB-CVT-REV and FB+CVT-REV.. We examine various prompting strategies, including zero- and few-shot prompting, including variable entity types, and chain-of-thought reasoning.. We conduct a comprehensive human evaluation of the generated explanations based on correctness, clarity, and hallucination, and also assess the use of large language models as automatic judges..
+To this end, this work introduces MECAT, a Multi-Expert Constructed Benchmark for Fine-Grained Audio Understanding Tasks.. Generated via a pipeline that integrates analysis from specialized expert models with Chain-of-Thought large language model reasoning, MECAT provides multi-perspective, fine-grained captions and open-set question-answering pairs.. The benchmark is complemented by a novel metric: DATE (Discriminative-Enhanced Audio Text Evaluation).. This metric penalizes generic terms and rewards detailed descriptions by combining single-sample semantic similarity with cross-sample discriminability..
 
-Our results demonstrate promising performance in terms of explanation correctness and clarity, although several challenges remain for future research.. All scripts and data used in this study are publicly available at https://github.com/idirlab/KGRule2NL}{https://github.com/idirlab/KGRule2NL..
+A comprehensive evaluation of state-of-the-art audio models is also presented, providing new insights into their current capabilities and limitations.. The data and code are available at https://github.com/xiaomi-research/mecat.
 
 ---
 
-## 3. Seed-Prover: Deep and Broad Reasoning for Automated Theorem Proving
+## 3. Causal Reasoning in Pieces: Modular In-Context Learning for Causal
+  Discovery
 
 🧠 **Category:** CS.AI | 📅 **Published:** July 31, 2025 | 🔥 **Score:** 25 points
 
-**Authors:** Luoxin Chen, Jinming Gu, Liankai Huang et al. (+33 more)
+**Authors:** Kacper Kadziolka, Saber Salehkaleybar
 
-**Links:** [ArXiv Paper](https://arxiv.org/abs/2507.23726v1) | [PDF Download](https://arxiv.org/pdf/2507.23726v1.pdf)
+**Links:** [ArXiv Paper](https://arxiv.org/abs/2507.23488v1) | [PDF Download](https://arxiv.org/pdf/2507.23488v1.pdf)
 
-LLMs have demonstrated strong mathematical reasoning abilities by leveraging reinforcement learning with long chain-of-thought, yet they continue to struggle with theorem proving due to the lack of clear supervision signals when solely using natural language.. Dedicated domain-specific languages like Lean provide clear supervision via formal verification of proofs, enabling effective training through reinforcement learning..
+Causal inference remains a fundamental challenge for large language models.. Recent advances in internal reasoning with large language models have sparked interest in whether state-of-the-art reasoning models can robustly perform causal discovery-a task where conventional models often suffer from severe overfitting and near-random performance under data perturbations..
 
-In this work, we propose \textbf{Seed-Prover}, a lemma-style whole-proof reasoning model.. Seed-Prover can iteratively refine its proof based on Lean feedback, proved lemmas, and self-summarization.. To solve IMO-level contest problems, we design three test-time inference strategies that enable both deep and broad reasoning.. Seed-Prover proves $78.1\%$ of formalized past IMO problems, saturates MiniF2F, and achieves over 50\% on PutnamBench, outperforming the previous state-of-the-art by a large margin.. To address the lack of geometry support in Lean, we introduce a geometry reasoning engine \textbf{Seed-Geometry}, which outperforms previous formal geometry engines..
+We study causal discovery on the Corr2Cause benchmark using the emergent OpenAI's o-series and DeepSeek-R model families and find that these reasoning-first architectures achieve significantly greater native gains than prior approaches.. To capitalize on these strengths, we introduce a modular in-context pipeline inspired by the Tree-of-Thoughts and Chain-of-Thoughts methodologies, yielding nearly three-fold improvements over conventional baselines..
 
-We use these two systems to participate in IMO 2025 and fully prove 5 out of 6 problems.. This work represents a significant advancement in automated mathematical reasoning, demonstrating the effectiveness of formal verification with long chain-of-thought reasoning..
+We further probe the pipeline's impact by analyzing reasoning chain length, complexity, and conducting qualitative and quantitative comparisons between conventional and reasoning models.. Our findings suggest that while advanced reasoning models represent a substantial leap forward, carefully structured in-context frameworks are essential to maximize their capabilities and offer a generalizable blueprint for causal discovery across diverse domains..
 
 ---
 
-## 4. Can LLM-Reasoning Models Replace Classical Planning? A Benchmark Study
+## 4. MPCC: A Novel Benchmark for Multimodal Planning with Complex Constraints
+  in Multimodal Large Language Models
 
 🧠 **Category:** CS.AI | 📅 **Published:** July 31, 2025 | 🔥 **Score:** 25 points
 
-**Authors:** Kai Goebel, Patrik Zips
+**Authors:** Yiyan Ji, Haoran Chen, Qiguang Chen et al. (+3 more)
 
-**Links:** [ArXiv Paper](https://arxiv.org/abs/2507.23589v1) | [PDF Download](https://arxiv.org/pdf/2507.23589v1.pdf)
+**Links:** [ArXiv Paper](https://arxiv.org/abs/2507.23382v1) | [PDF Download](https://arxiv.org/pdf/2507.23382v1.pdf)
 
-Recent advancements in Large Language Models have sparked interest in their potential for robotic task planning.. While these models demonstrate strong generative capabilities, their effectiveness in producing structured and executable plans remains uncertain..
+Multimodal planning capabilities refer to the ability to predict, reason, and design steps for task execution with multimodal context, which is essential for complex reasoning and decision-making across multiple steps.. However, current benchmarks face two key challenges: (1) they cannot directly assess multimodal real-world planning capabilities, and (2) they lack constraints or implicit constraints across modalities..
 
-This paper presents a systematic evaluation of a broad spectrum of current state of the art language models, each directly prompted using Planning Domain Definition Language domain and problem files, and compares their planning performance with the Fast Downward planner across a variety of benchmarks.. In addition to measuring success rates, we assess how faithfully the generated plans translate into sequences of actions that can actually be executed, identifying both strengths and limitations of using these models in this setting.. Our findings show that while the models perform well on simpler planning tasks, they continue to struggle with more complex scenarios that require precise resource management, consistent state tracking, and strict constraint compliance..
+To address these issues, we introduce Multimodal Planning with Complex Constraints (MPCC), the first benchmark to systematically evaluate MLLMs' ability to handle multimodal constraints in planning.. To address the first challenge, MPCC focuses on three real-world tasks: Flight Planning, Calendar Planning, and Meeting Planning.. To solve the second challenge, we introduce complex constraints (e.g. budget, temporal, and spatial) in these tasks, with graded difficulty levels (EASY, MEDIUM, HARD) to separate constraint complexity from search space expansion.. Experiments on 13 advanced MLLMs reveal significant challenges: closed-source models achieve only 21.3% feasible plans, while open-source models average below 11%..
 
-These results underscore fundamental challenges in applying language models to robotic planning in real world environments.. By outlining the gaps that emerge during execution, we aim to guide future research toward combined approaches that integrate language models with classical planners in order to enhance the reliability and scalability of planning in autonomous robotics..
+Additionally, we observe that MLLMs are highly sensitive to constraint complexity and that traditional multimodal prompting strategies fail in multi-constraint scenarios.. Our work formalizes multimodal constraints in planning, provides a rigorous evaluation framework, and highlights the need for advancements in constraint-aware reasoning for real-world MLLM applications..
 
 ---
 
-## 5. DICE: Dynamic In-Context Example Selection in LLM Agents via Efficient
-  Knowledge Transfer
+## 5. LLM4Rail: An LLM-Augmented Railway Service Consulting Platform
 
 🧠 **Category:** CS.AI | 📅 **Published:** July 31, 2025 | 🔥 **Score:** 25 points
 
-**Authors:** Ruoyu Wang, Junda Wu, Yu Xia et al. (+4 more)
+**Authors:** Zhuo Li, Xianghuai Deng, Chiwei Feng et al. (+7 more)
 
-**Links:** [ArXiv Paper](https://arxiv.org/abs/2507.23554v1) | [PDF Download](https://arxiv.org/pdf/2507.23554v1.pdf)
+**Links:** [ArXiv Paper](https://arxiv.org/abs/2507.23377v1) | [PDF Download](https://arxiv.org/pdf/2507.23377v1.pdf)
 
-Large language model-based agents, empowered by in-context learning (ICL), have demonstrated strong capabilities in complex reasoning and tool-use tasks.. However, existing works have shown that the effectiveness of ICL is highly sensitive to the choice of demonstrations, with suboptimal examples often leading to unstable or degraded performance..
+Large language models (LLMs) have significantly reshaped different walks of business.. To meet the increasing demands for individualized railway service, we develop LLM4Rail - a novel LLM-augmented railway service consulting platform..
 
-While prior work has explored example selection, including in some agentic or multi-step settings, existing approaches typically rely on heuristics or task-specific designs and lack a general, theoretically grounded criterion for what constitutes an effective demonstration across reasoning steps.. Therefore, it is non-trivial to develop a principled, general-purpose method for selecting demonstrations that consistently benefit agent performance.. In this paper, we address this challenge with DICE, Dynamic In-Context Example Selection for LLM Agents, a theoretically grounded ICL framework for agentic tasks that selects the most relevant demonstrations at each step of reasoning.. Our approach decomposes demonstration knowledge into transferable and non-transferable components through a causal lens, showing how the latter can introduce spurious dependencies that impair generalization.. We further propose a stepwise selection criterion with a formal guarantee of improved agent performance..
+Empowered by LLM, LLM4Rail can provide custom modules for ticketing, railway food & drink recommendations, weather information, and chitchat.. In LLM4Rail, we propose the iterative "Question-Thought-Action-Observation (QTAO)" prompting framework.. It meticulously integrates verbal reasoning with task-oriented actions, that is, reasoning to guide action selection, to effectively retrieve external observations relevant to railway operation and service to generate accurate responses.. To provide personalized onboard dining services, we first construct the Chinese Railway Food and Drink (CRFD-25) - a publicly accessible takeout dataset tailored for railway services.. CRFD-25 covers a wide range of signature dishes categorized by cities, cuisines, age groups, and spiciness levels..
 
-Importantly, DICE is a general, framework-agnostic solution that can be integrated as a plug-in module into existing agentic frameworks without any additional training cost.. Extensive experiments across diverse domains demonstrate our method's effectiveness and generality, highlighting the importance of principled, context-aware demo selection for robust and efficient LLM agents..
+We further introduce an LLM-based zero-shot conversational recommender for railway catering.. To address the unconstrained nature of open recommendations, the feature similarity-based post-processing step is introduced to ensure all the recommended items are aligned with CRFD-25 dataset..
 
 ---
 
