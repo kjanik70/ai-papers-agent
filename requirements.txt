@@ -1,8 +1,5 @@
-arxiv==2.1.3
-requests==2.31.0
-beautifulsoup4==4.12.3
-lxml==5.1.0
-urllib3==2.2.1
-python-dateutil==2.8.2
-html5lib==1.1
-soupsieve==2.5
+# Minimal requirements - let pip resolve dependencies automatically
+arxiv
+beautifulsoup4
+lxml
+python-dateutil
