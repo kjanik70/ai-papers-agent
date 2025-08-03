@@ -3,3 +3,4 @@ arxiv
 beautifulsoup4
 lxml
 python-dateutil
+snscape
