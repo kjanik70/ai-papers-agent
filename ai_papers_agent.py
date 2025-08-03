@@ -1,22 +1,20 @@
 #!/usr/bin/env python3
 """
-AI Papers Agent - Social Media Engagement Ranking
+AI Papers Agent - GitHub Pages + RSS Output
 Finds the top 5 AI papers with highest social media engagement in the last 7 days
+Outputs to GitHub Pages and RSS feed (no email required)
 """
 
 import arxiv
 import requests
 import json
 import sqlite3
-import smtplib
 import re
 import time
+import os
 from datetime import datetime, timedelta
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 from bs4 import BeautifulSoup
 from urllib.parse import quote
-import os
 from typing import List, Dict, Any
 import logging
 
@@ -222,11 +220,326 @@ class SocialMediaTracker:
                 
         return int(number)
 
+class OutputManager:
+    """Handles GitHub Pages and RSS output generation"""
+    
+    def __init__(self):
+        self.output_dir = "docs"  # GitHub Pages serves from docs/ folder
+        os.makedirs(self.output_dir, exist_ok=True)
+    
+    def generate_github_pages(self, top_papers: List[tuple]) -> str:
+        """Generate static HTML for GitHub Pages"""
+        current_date = datetime.now().strftime("%B %d, %Y")
+        
+        html_content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 Top 5 AI Papers - {current_date}</title>
+    <meta name="description" content="Weekly digest of AI papers ranked by social media engagement">
+    <style>
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{ 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6; 
+            color: #333; 
+            background: #f8f9fa;
+        }}
+        .container {{ max-width: 900px; margin: 0 auto; padding: 20px; }}
+        .header {{ 
+            text-align: center; 
+            background: white; 
+            padding: 40px 20px; 
+            border-radius: 12px; 
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }}
+        .header h1 {{ font-size: 2.5em; margin-bottom: 10px; color: #2c3e50; }}
+        .header p {{ color: #7f8c8d; font-size: 1.1em; }}
+        .paper {{ 
+            background: white; 
+            margin: 25px 0; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #3498db; 
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }}
+        .paper:hover {{ 
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 25px rgba(0,0,0,0.12); 
+        }}
+        .paper h2 {{ 
+            color: #2c3e50; 
+            margin-bottom: 15px; 
+            font-size: 1.4em; 
+            line-height: 1.3;
+        }}
+        .paper-meta {{ 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 15px; 
+            margin-bottom: 15px; 
+            font-size: 0.9em;
+        }}
+        .authors {{ color: #7f8c8d; }}
+        .score {{ 
+            color: #e74c3c; 
+            font-weight: bold; 
+            background: #ffe6e6; 
+            padding: 4px 8px; 
+            border-radius: 6px;
+        }}
+        .summary {{ 
+            color: #34495e; 
+            margin: 20px 0; 
+            line-height: 1.7;
+        }}
+        .links {{ margin-top: 20px; }}
+        .links a {{ 
+            color: #3498db; 
+            text-decoration: none; 
+            margin-right: 15px; 
+            padding: 8px 16px; 
+            border: 2px solid #3498db; 
+            border-radius: 6px; 
+            transition: all 0.2s ease;
+            display: inline-block;
+        }}
+        .links a:hover {{ 
+            background: #3498db; 
+            color: white; 
+            transform: translateY(-1px);
+        }}
+        .footer {{ 
+            text-align: center; 
+            margin-top: 50px; 
+            padding: 30px; 
+            background: white; 
+            border-radius: 12px; 
+            color: #7f8c8d; 
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }}
+        .social-badge {{ 
+            background: #e8f4f8; 
+            color: #2980b9; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 0.85em; 
+            margin-left: 10px;
+        }}
+        @media (max-width: 768px) {{
+            .container {{ padding: 10px; }}
+            .header h1 {{ font-size: 2em; }}
+            .paper {{ padding: 20px; margin: 15px 0; }}
+            .paper-meta {{ flex-direction: column; gap: 8px; }}
+            .links a {{ display: block; margin: 5px 0; text-align: center; }}
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Top 5 AI Papers This Week</h1>
+            <p>Week of {current_date}</p>
+            <p>Ranked by social media engagement (mentions, replies, likes) in the last 7 days</p>
+            <div class="social-badge">🔥 Trending • 📊 Data-Driven • 🚀 Real-Time</div>
+        </div>
+"""
+        
+        for i, (paper, score) in enumerate(top_papers, 1):
+            authors = ", ".join([author.name for author in paper.authors[:3]])
+            if len(paper.authors) > 3:
+                authors += f", et al. ({len(paper.authors)} total)"
+            
+            emoji = ["🥇", "🥈", "🥉", "🏅", "⭐"][i-1]
+            summary = self._generate_summary(paper)
+            
+            html_content += f"""
+        <div class="paper">
+            <h2>{emoji} #{i}. {paper.title}</h2>
+            <div class="paper-meta">
+                <div class="authors"><strong>Authors:</strong> {authors}</div>
+                <div class="score">🔥 Social Engagement Score: {score:.1f}</div>
+            </div>
+            <div class="summary">{summary}</div>
+            <div class="links">
+                <a href="{paper.entry_id}" target="_blank">📖 Read Full Paper</a>
+                <a href="{paper.pdf_url}" target="_blank">📄 Download PDF</a>
+            </div>
+        </div>
+"""
+        
+        html_content += f"""
+        <div class="footer">
+            <p><strong>Generated by AI Papers Agent</strong></p>
+            <p>Tracking social media engagement across Twitter, Reddit, Hacker News, and GitHub</p>
+            <p>🤖 Built with ❤️ for the AI research community</p>
+            <p><small>Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M UTC")}</small></p>
+            <p style="margin-top: 15px;">
+                <a href="feed.xml" style="color: #e67e22; text-decoration: none;">📡 Subscribe to RSS Feed</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>"""
+        
+        # Save to docs/index.html for GitHub Pages
+        filename = f"{self.output_dir}/index.html"
+        with open(filename, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+        
+        logger.info(f"Generated GitHub Pages site: {filename}")
+        return filename
+    
+    def generate_rss_feed(self, top_papers: List[tuple]) -> str:
+        """Generate RSS feed"""
+        current_date = datetime.now().strftime("%a, %d %b %Y %H:%M:%S GMT")
+        build_date = datetime.now().strftime("%a, %d %b %Y %H:%M:%S GMT")
+        week_date = datetime.now().strftime("%B %d, %Y")
+        
+        # Get GitHub Pages URL from environment or use placeholder
+        base_url = os.getenv('GITHUB_PAGES_URL', 'https://your-username.github.io/ai-papers-agent')
+        
+        rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>Top AI Papers - Social Engagement Rankings</title>
+    <description>Weekly digest of AI papers ranked by social media buzz (mentions, replies, likes) from the past 7 days</description>
+    <link>{base_url}</link>
+    <atom:link href="{base_url}/feed.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>{build_date}</lastBuildDate>
+    <pubDate>{current_date}</pubDate>
+    <generator>AI Papers Agent</generator>
+    <webMaster>ai-papers-agent@github.com</webMaster>
+    <category>Artificial Intelligence</category>
+    <category>Machine Learning</category>
+    <category>Research</category>
+"""
+        
+        for i, (paper, score) in enumerate(top_papers, 1):
+            authors = ", ".join([author.name for author in paper.authors[:3]])
+            if len(paper.authors) > 3:
+                authors += ", et al."
+            
+            emoji = ["🥇", "🥈", "🥉", "🏅", "⭐"][i-1]
+            summary = self._generate_summary(paper)
+            
+            # Create unique GUID for this paper in this week
+            guid = f"{paper.get_short_id()}-{datetime.now().strftime('%Y-W%U')}"
+            
+            rss_content += f"""
+    <item>
+        <title>{emoji} #{i}. {paper.title}</title>
+        <description><![CDATA[
+            <p><strong>Authors:</strong> {authors}</p>
+            <p><strong>Social Engagement Score:</strong> {score:.1f} 🔥</p>
+            <p><strong>Week of:</strong> {week_date}</p>
+            <hr>
+            <p>{summary}</p>
+            <p style="margin-top: 20px;">
+                <a href="{paper.entry_id}" style="color: #3498db; text-decoration: none; margin-right: 15px;">📖 Read Full Paper</a>
+                <a href="{paper.pdf_url}" style="color: #3498db; text-decoration: none;">📄 Download PDF</a>
+            </p>
+        ]]></description>
+        <link>{paper.entry_id}</link>
+        <guid isPermaLink="false">{guid}</guid>
+        <pubDate>{current_date}</pubDate>
+        <category>AI Research</category>
+        <author>ai-papers-agent@github.com ({authors})</author>
+        <source url="{base_url}/feed.xml">Top AI Papers - Social Engagement Rankings</source>
+    </item>"""
+        
+        rss_content += """
+</channel>
+</rss>"""
+        
+        # Save RSS feed
+        filename = f"{self.output_dir}/feed.xml"
+        with open(filename, 'w', encoding='utf-8') as f:
+            f.write(rss_content)
+        
+        logger.info(f"Generated RSS feed: {filename}")
+        return filename
+    
+    def generate_json_api(self, top_papers: List[tuple]) -> str:
+        """Generate JSON API for developers"""
+        current_date = datetime.now().isoformat()
+        
+        feed_data = {
+            "generated_at": current_date,
+            "title": "Top 5 AI Papers This Week",
+            "description": "AI papers ranked by social media engagement in the last 7 days",
+            "methodology": "Papers ranked by weighted social media engagement (Twitter, Reddit, Hacker News, GitHub)",
+            "time_window": "7 days",
+            "update_frequency": "Weekly (Fridays)",
+            "papers": []
+        }
+        
+        for i, (paper, score) in enumerate(top_papers, 1):
+            authors = [author.name for author in paper.authors]
+            
+            paper_data = {
+                "rank": i,
+                "title": paper.title,
+                "authors": authors,
+                "arxiv_id": paper.get_short_id(),
+                "arxiv_url": paper.entry_id,
+                "pdf_url": paper.pdf_url,
+                "published_date": paper.published.isoformat(),
+                "social_engagement_score": round(score, 2),
+                "summary": self._generate_summary(paper),
+                "categories": [cat.term for cat in paper.categories],
+                "primary_category": paper.primary_category
+            }
+            feed_data["papers"].append(paper_data)
+        
+        # Save JSON API
+        filename = f"{self.output_dir}/api.json"
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(feed_data, f, indent=2, ensure_ascii=False)
+        
+        logger.info(f"Generated JSON API: {filename}")
+        return filename
+    
+    def _generate_summary(self, paper) -> str:
+        """Generate a concise summary from paper abstract"""
+        try:
+            abstract = paper.summary
+            sentences = abstract.split('. ')
+            
+            # Take first 2-3 sentences or up to 200 words
+            summary_sentences = []
+            word_count = 0
+            
+            for sentence in sentences:
+                words_in_sentence = len(sentence.split())
+                if word_count + words_in_sentence > 200:
+                    break
+                summary_sentences.append(sentence.strip())
+                word_count += words_in_sentence
+                
+                if len(summary_sentences) >= 3:
+                    break
+            
+            summary = '. '.join(summary_sentences)
+            if summary and not summary.endswith('.'):
+                summary += '.'
+                
+            return summary if summary else abstract[:200] + "..."
+            
+        except Exception as e:
+            logger.error(f"Error generating summary: {e}")
+            return paper.summary[:200] + "..."
+
 class AIPapersAgent:
     """Main agent class for finding and ranking AI papers"""
     
     def __init__(self):
         self.social_tracker = SocialMediaTracker()
+        self.output_manager = OutputManager()
         self.db_path = 'previous_papers.db'
         self.json_path = 'previous_papers.json'
         self.init_database()
@@ -417,140 +730,9 @@ class AIPapersAgent:
         
         return ranked_papers
     
-    def generate_summary(self, paper: arxiv.Result) -> str:
-        """Generate a summary for the paper"""
-        try:
-            # Simple extractive summary from abstract
-            abstract = paper.summary
-            sentences = abstract.split('. ')
-            
-            # Take first 2-3 sentences or up to 200 words
-            summary_sentences = []
-            word_count = 0
-            
-            for sentence in sentences:
-                words_in_sentence = len(sentence.split())
-                if word_count + words_in_sentence > 200:
-                    break
-                summary_sentences.append(sentence)
-                word_count += words_in_sentence
-                
-                if len(summary_sentences) >= 3:
-                    break
-            
-            summary = '. '.join(summary_sentences)
-            if not summary.endswith('.'):
-                summary += '.'
-                
-            return summary
-            
-        except Exception as e:
-            logger.error(f"Error generating summary: {e}")
-            return paper.summary[:200] + "..."
-    
-    def format_email_content(self, top_papers: List[tuple]) -> str:
-        """Format papers into email content"""
-        current_date = datetime.now().strftime("%B %d, %Y")
-        
-        content = f"""
-        <html>
-        <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-        
-        <h1 style="color: #2c3e50;">🤖 Top 5 AI Papers This Week</h1>
-        <p style="color: #7f8c8d; font-size: 16px;">Week of {current_date}</p>
-        <p style="color: #7f8c8d;">Papers ranked by social media engagement (mentions, replies, likes) in the last 7 days</p>
-        
-        <hr style="border: 1px solid #ecf0f1; margin: 30px 0;">
-        """
-        
-        for i, (paper, score) in enumerate(top_papers, 1):
-            # Format author names
-            authors = ", ".join([author.name for author in paper.authors[:3]])
-            if len(paper.authors) > 3:
-                authors += ", et al."
-            
-            # Generate emoji based on ranking
-            emoji = ["🥇", "🥈", "🥉", "🏅", "⭐"][i-1] if i <= 5 else "📄"
-            
-            summary = self.generate_summary(paper)
-            
-            content += f"""
-            <div style="margin: 30px 0; padding: 20px; border-left: 4px solid #3498db; background-color: #f8f9fa;">
-                <h2 style="color: #2c3e50; margin-bottom: 10px;">
-                    {emoji} #{i}. {paper.title}
-                </h2>
-                
-                <p style="color: #7f8c8d; margin: 5px 0;">
-                    <strong>Authors:</strong> {authors}
-                </p>
-                
-                <p style="color: #e74c3c; margin: 5px 0; font-weight: bold;">
-                    🔥 Social Engagement Score: {score:.1f}
-                </p>
-                
-                <p style="color: #34495e; margin: 15px 0;">
-                    {summary}
-                </p>
-                
-                <p style="margin: 10px 0;">
-                    <a href="{paper.entry_id}" style="color: #3498db; text-decoration: none;">
-                        📖 Read Full Paper
-                    </a> | 
-                    <a href="{paper.pdf_url}" style="color: #3498db; text-decoration: none;">
-                        📄 Download PDF
-                    </a>
-                </p>
-            </div>
-            """
-        
-        content += """
-        <hr style="border: 1px solid #ecf0f1; margin: 30px 0;">
-        
-        <div style="text-align: center; color: #7f8c8d; font-size: 14px;">
-            <p>This digest was automatically generated by AI Papers Agent</p>
-            <p>Tracking social media engagement across Twitter, Reddit, Hacker News, and GitHub</p>
-            <p>🤖 Built with ❤️ for the AI research community</p>
-        </div>
-        
-        </body>
-        </html>
-        """
-        
-        return content
-    
-    def send_email(self, content: str):
-        """Send email to Substack"""
-        try:
-            gmail_email = os.getenv('GMAIL_EMAIL')
-            gmail_password = os.getenv('GMAIL_PASSWORD')
-            substack_email = os.getenv('SUBSTACK_EMAIL')
-            
-            if not all([gmail_email, gmail_password, substack_email]):
-                raise ValueError("Missing required environment variables")
-            
-            msg = MIMEMultipart('alternative')
-            msg['Subject'] = f"🤖 Top 5 AI Papers - {datetime.now().strftime('%B %d, %Y')}"
-            msg['From'] = gmail_email
-            msg['To'] = substack_email
-            
-            html_part = MIMEText(content, 'html')
-            msg.attach(html_part)
-            
-            server = smtplib.SMTP('smtp.gmail.com', 587)
-            server.starttls()
-            server.login(gmail_email, gmail_password)
-            server.send_message(msg)
-            server.quit()
-            
-            logger.info("Email sent successfully to Substack!")
-            
-        except Exception as e:
-            logger.error(f"Error sending email: {e}")
-            raise
-    
     def run(self):
         """Main execution function"""
-        logger.info("Starting AI Papers Agent - Social Media Engagement Ranking")
+        logger.info("Starting AI Papers Agent - GitHub Pages + RSS Output")
         
         try:
             # Fetch recent papers
@@ -574,9 +756,17 @@ class AIPapersAgent:
             for i, (paper, score) in enumerate(top_papers, 1):
                 logger.info(f"{i}. {paper.title[:50]}... (Score: {score:.2f})")
             
-            # Generate and send email
-            email_content = self.format_email_content(top_papers)
-            self.send_email(email_content)
+            # Generate outputs
+            logger.info("Generating GitHub Pages and RSS outputs...")
+            
+            html_file = self.output_manager.generate_github_pages(top_papers)
+            rss_file = self.output_manager.generate_rss_feed(top_papers)
+            json_file = self.output_manager.generate_json_api(top_papers)
+            
+            logger.info("Generated outputs:")
+            logger.info(f"  - GitHub Pages: {html_file}")
+            logger.info(f"  - RSS Feed: {rss_file}")
+            logger.info(f"  - JSON API: {json_file}")
             
             # Mark papers as processed
             for paper, score in top_papers:
@@ -584,9 +774,30 @@ class AIPapersAgent:
             
             logger.info("AI Papers Agent completed successfully!")
             
+            # Print setup instructions if this is the first run
+            self._print_setup_instructions()
+            
         except Exception as e:
             logger.error(f"Error in main execution: {e}")
             raise
+    
+    def _print_setup_instructions(self):
+        """Print GitHub Pages setup instructions"""
+        logger.info("\n" + "="*60)
+        logger.info("🎉 SUCCESS! Your AI papers digest has been generated!")
+        logger.info("="*60)
+        logger.info("\nTo enable GitHub Pages:")
+        logger.info("1. Go to your repository on GitHub")
+        logger.info("2. Click Settings → Pages")
+        logger.info("3. Source: Deploy from a branch")
+        logger.info("4. Branch: main")
+        logger.info("5. Folder: /docs")
+        logger.info("6. Click Save")
+        logger.info("\nYour site will be available at:")
+        logger.info("https://your-username.github.io/ai-papers-agent/")
+        logger.info("\nRSS feed will be at:")
+        logger.info("https://your-username.github.io/ai-papers-agent/feed.xml")
+        logger.info("="*60)
 
 if __name__ == "__main__":
     agent = AIPapersAgent()
