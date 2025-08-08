@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20250803.md",
-  "date": "2025-08-03T05:51:45.411192",
+  "filename": "ai_papers_weekly_20250808.md",
+  "date": "2025-08-08T19:49:29.248871",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "A Unified Perception-Language-Action Framework for Adaptive Autonomous\n  Driving",
+    "title": "Cooper: Co-Optimizing Policy and Reward Models in Reinforcement Learning\n  for Large Language Models",
     "score": 25,
-    "url": "https://arxiv.org/abs/2507.23540v1"
+    "url": "https://arxiv.org/abs/2508.05613v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "A Unified Perception-Language-Action Framework for Adaptive Autonomous\n  Driving",
+      "title": "Cooper: Co-Optimizing Policy and Reward Models in Reinforcement Learning\n  for Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2507.23540v1"
+      "url": "https://arxiv.org/abs/2508.05613v1"
     },
     {
       "rank": 2,
-      "title": "MECAT: A Multi-Experts Constructed Benchmark for Fine-Grained Audio\n  Understanding Tasks",
+      "title": "Shuffle-R1: Efficient RL framework for Multimodal Large Language Models\n  via Data-centric Dynamic Shuffle",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2507.23511v1"
+      "url": "https://arxiv.org/abs/2508.05612v1"
     },
     {
       "rank": 3,
-      "title": "Causal Reasoning in Pieces: Modular In-Context Learning for Causal\n  Discovery",
+      "title": "The World According to LLMs: How Geographic Origin Influences LLMs'\n  Entity Deduction Capabilities",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2507.23488v1"
+      "url": "https://arxiv.org/abs/2508.05525v1"
     },
     {
       "rank": 4,
-      "title": "MPCC: A Novel Benchmark for Multimodal Planning with Complex Constraints\n  in Multimodal Large Language Models",
+      "title": "Auto-Eval Judge: Towards a General Agentic Framework for Task Completion\n  Evaluation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2507.23382v1"
+      "url": "https://arxiv.org/abs/2508.05508v1"
     },
     {
       "rank": 5,
-      "title": "LLM4Rail: An LLM-Augmented Railway Service Consulting Platform",
+      "title": "InfiAlign: A Scalable and Sample-Efficient Framework for Aligning LLMs\n  to Enhance Reasoning Capabilities",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2507.23377v1"
+      "url": "https://arxiv.org/abs/2508.05496v1"
     }
   ]
 }
