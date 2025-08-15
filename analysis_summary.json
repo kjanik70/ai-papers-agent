@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20250808.md",
-  "date": "2025-08-08T19:49:29.248871",
+  "filename": "ai_papers_weekly_20250815.md",
+  "date": "2025-08-15T19:48:23.700623",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Cooper: Co-Optimizing Policy and Reward Models in Reinforcement Learning\n  for Large Language Models",
+    "title": "Performance of GPT-5 in Brain Tumor MRI Reasoning",
     "score": 25,
-    "url": "https://arxiv.org/abs/2508.05613v1"
+    "url": "https://arxiv.org/abs/2508.10865v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Cooper: Co-Optimizing Policy and Reward Models in Reinforcement Learning\n  for Large Language Models",
+      "title": "Performance of GPT-5 in Brain Tumor MRI Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.05613v1"
+      "url": "https://arxiv.org/abs/2508.10865v1"
     },
     {
       "rank": 2,
-      "title": "Shuffle-R1: Efficient RL framework for Multimodal Large Language Models\n  via Data-centric Dynamic Shuffle",
+      "title": "The Knowledge-Reasoning Dissociation: Fundamental Limitations of LLMs in\n  Clinical Natural Language Inference",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.05612v1"
+      "url": "https://arxiv.org/abs/2508.10777v1"
     },
     {
       "rank": 3,
-      "title": "The World According to LLMs: How Geographic Origin Influences LLMs'\n  Entity Deduction Capabilities",
+      "title": "EgoCross: Benchmarking Multimodal Large Language Models for Cross-Domain\n  Egocentric Video Question Answering",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.05525v1"
+      "url": "https://arxiv.org/abs/2508.10729v1"
     },
     {
       "rank": 4,
-      "title": "Auto-Eval Judge: Towards a General Agentic Framework for Task Completion\n  Evaluation",
+      "title": "GenOM: Ontology Matching with Description Generation and Large Language\n  Model",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.05508v1"
+      "url": "https://arxiv.org/abs/2508.10703v1"
     },
     {
       "rank": 5,
-      "title": "InfiAlign: A Scalable and Sample-Efficient Framework for Aligning LLMs\n  to Enhance Reasoning Capabilities",
+      "title": "MSRS: Adaptive Multi-Subspace Representation Steering for Attribute\n  Alignment in Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.05496v1"
+      "url": "https://arxiv.org/abs/2508.10599v1"
     }
   ]
 }
