@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20250815.md",
-  "date": "2025-08-15T19:48:23.700623",
+  "filename": "ai_papers_weekly_20250822.md",
+  "date": "2025-08-22T19:45:26.574980",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Performance of GPT-5 in Brain Tumor MRI Reasoning",
+    "title": "Dissecting Tool-Integrated Reasoning: An Empirical Study and Analysis",
     "score": 25,
-    "url": "https://arxiv.org/abs/2508.10865v1"
+    "url": "https://arxiv.org/abs/2508.15754v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Performance of GPT-5 in Brain Tumor MRI Reasoning",
+      "title": "Dissecting Tool-Integrated Reasoning: An Empirical Study and Analysis",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.10865v1"
+      "url": "https://arxiv.org/abs/2508.15754v1"
     },
     {
       "rank": 2,
-      "title": "The Knowledge-Reasoning Dissociation: Fundamental Limitations of LLMs in\n  Clinical Natural Language Inference",
+      "title": "End-to-End Agentic RAG System Training for Traceable Diagnostic\n  Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.10777v1"
+      "url": "https://arxiv.org/abs/2508.15746v1"
     },
     {
       "rank": 3,
-      "title": "EgoCross: Benchmarking Multimodal Large Language Models for Cross-Domain\n  Egocentric Video Question Answering",
+      "title": "EcomMMMU: Strategic Utilization of Visuals for Robust Multimodal\n  E-Commerce Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.10729v1"
+      "url": "https://arxiv.org/abs/2508.15721v1"
     },
     {
       "rank": 4,
-      "title": "GenOM: Ontology Matching with Description Generation and Large Language\n  Model",
+      "title": "StreamMem: Query-Agnostic KV Cache Memory for Streaming Video\n  Understanding",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.10703v1"
+      "url": "https://arxiv.org/abs/2508.15717v1"
     },
     {
       "rank": 5,
-      "title": "MSRS: Adaptive Multi-Subspace Representation Steering for Attribute\n  Alignment in Large Language Models",
+      "title": "GRAFT: GRaPH and Table Reasoning for Textual Alignment -- A Benchmark\n  for Structured Instruction Following and Visual Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.10599v1"
+      "url": "https://arxiv.org/abs/2508.15690v1"
     }
   ]
 }
