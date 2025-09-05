@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20250829.md",
-  "date": "2025-08-29T19:42:04.241899",
+  "filename": "ai_papers_weekly_20250905.md",
+  "date": "2025-09-05T19:44:42.418221",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "OnGoal: Tracking and Visualizing Conversational Goals in Multi-Turn\n  Dialogue with Large Language Models",
+    "title": "ArcMemo: Abstract Reasoning Composition with Lifelong LLM Memory",
     "score": 25,
-    "url": "https://arxiv.org/abs/2508.21061v1"
+    "url": "https://arxiv.org/abs/2509.04439v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "OnGoal: Tracking and Visualizing Conversational Goals in Multi-Turn\n  Dialogue with Large Language Models",
+      "title": "ArcMemo: Abstract Reasoning Composition with Lifelong LLM Memory",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.21061v1"
+      "url": "https://arxiv.org/abs/2509.04439v1"
     },
     {
       "rank": 2,
-      "title": "Veritas: Generalizable Deepfake Detection via Pattern-Aware Reasoning",
+      "title": "Towards a Unified View of Large Language Model Post-Training",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.21048v1"
+      "url": "https://arxiv.org/abs/2509.04419v1"
     },
     {
       "rank": 3,
-      "title": "Inference-Time Alignment Control for Diffusion Models with Reinforcement\n  Learning Guidance",
+      "title": "EvoEmo: Towards Evolved Emotional Policies for LLM Agents in Multi-Turn\n  Negotiation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.21016v1"
+      "url": "https://arxiv.org/abs/2509.04310v1"
     },
     {
       "rank": 4,
-      "title": "ChatThero: An LLM-Supported Chatbot for Behavior Change and Therapeutic\n  Support in Addiction Recovery",
+      "title": "Intermediate Languages Matter: Formal Languages and LLMs affect\n  Neurosymbolic Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.20996v1"
+      "url": "https://arxiv.org/abs/2509.04083v1"
     },
     {
       "rank": 5,
-      "title": "Exploring Machine Learning and Language Models for Multimodal Depression\n  Detection",
+      "title": "CoT-Space: A Theoretical Framework for Internal Slow-Thinking via\n  Reinforcement Learning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2508.20805v1"
+      "url": "https://arxiv.org/abs/2509.04027v1"
     }
   ]
 }
