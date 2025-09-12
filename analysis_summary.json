@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20250905.md",
-  "date": "2025-09-05T19:44:42.418221",
+  "filename": "ai_papers_weekly_20250912.md",
+  "date": "2025-09-12T19:40:50.899660",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "ArcMemo: Abstract Reasoning Composition with Lifelong LLM Memory",
+    "title": "ButterflyQuant: Ultra-low-bit LLM Quantization through Learnable\n  Orthogonal Butterfly Transforms",
     "score": 25,
-    "url": "https://arxiv.org/abs/2509.04439v1"
+    "url": "https://arxiv.org/abs/2509.09679v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "ArcMemo: Abstract Reasoning Composition with Lifelong LLM Memory",
+      "title": "ButterflyQuant: Ultra-low-bit LLM Quantization through Learnable\n  Orthogonal Butterfly Transforms",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.04439v1"
+      "url": "https://arxiv.org/abs/2509.09679v1"
     },
     {
       "rank": 2,
-      "title": "Towards a Unified View of Large Language Model Post-Training",
+      "title": "The Illusion of Diminishing Returns: Measuring Long Horizon Execution in\n  LLMs",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.04419v1"
+      "url": "https://arxiv.org/abs/2509.09677v1"
     },
     {
       "rank": 3,
-      "title": "EvoEmo: Towards Evolved Emotional Policies for LLM Agents in Multi-Turn\n  Negotiation",
+      "title": "CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning\n  in Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.04310v1"
+      "url": "https://arxiv.org/abs/2509.09675v1"
     },
     {
       "rank": 4,
-      "title": "Intermediate Languages Matter: Formal Languages and LLMs affect\n  Neurosymbolic Reasoning",
+      "title": "LoCoBench: A Benchmark for Long-Context Large Language Models in Complex\n  Software Engineering",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.04083v1"
+      "url": "https://arxiv.org/abs/2509.09614v1"
     },
     {
       "rank": 5,
-      "title": "CoT-Space: A Theoretical Framework for Internal Slow-Thinking via\n  Reinforcement Learning",
+      "title": "Fluent but Unfeeling: The Emotional Blind Spots of Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.04027v1"
+      "url": "https://arxiv.org/abs/2509.09593v1"
     }
   ]
 }
