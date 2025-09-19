@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20250912.md",
-  "date": "2025-09-12T19:40:50.899660",
+  "filename": "ai_papers_weekly_20250919.md",
+  "date": "2025-09-19T19:35:38.372205",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "ButterflyQuant: Ultra-low-bit LLM Quantization through Learnable\n  Orthogonal Butterfly Transforms",
+    "title": "FlowRL: Matching Reward Distributions for LLM Reasoning",
     "score": 25,
-    "url": "https://arxiv.org/abs/2509.09679v1"
+    "url": "https://arxiv.org/abs/2509.15207v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "ButterflyQuant: Ultra-low-bit LLM Quantization through Learnable\n  Orthogonal Butterfly Transforms",
+      "title": "FlowRL: Matching Reward Distributions for LLM Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.09679v1"
+      "url": "https://arxiv.org/abs/2509.15207v1"
     },
     {
       "rank": 2,
-      "title": "The Illusion of Diminishing Returns: Measuring Long Horizon Execution in\n  LLMs",
+      "title": "SMARTER: A Data-efficient Framework to Improve Toxicity Detection with\n  Explanation via Self-augmenting Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.09677v1"
+      "url": "https://arxiv.org/abs/2509.15174v1"
     },
     {
       "rank": 3,
-      "title": "CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning\n  in Large Language Models",
+      "title": "Internalizing Self-Consistency in Language Models: Multi-Agent Consensus\n  Alignment",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.09675v1"
+      "url": "https://arxiv.org/abs/2509.15172v1"
     },
     {
       "rank": 4,
-      "title": "LoCoBench: A Benchmark for Long-Context Large Language Models in Complex\n  Software Engineering",
+      "title": "Cross-Modal Knowledge Distillation for Speech Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.09614v1"
+      "url": "https://arxiv.org/abs/2509.14930v1"
     },
     {
       "rank": 5,
-      "title": "Fluent but Unfeeling: The Emotional Blind Spots of Language Models",
+      "title": "Empathy-R1: A Chain-of-Empathy and Reinforcement Learning Framework for\n  Long-Form Mental Health Support",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.09593v1"
+      "url": "https://arxiv.org/abs/2509.14851v1"
     }
   ]
 }
