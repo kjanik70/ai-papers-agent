@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20250919.md",
-  "date": "2025-09-19T19:35:38.372205",
+  "filename": "ai_papers_weekly_20250926.md",
+  "date": "2025-09-26T19:46:03.585047",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "FlowRL: Matching Reward Distributions for LLM Reasoning",
+    "title": "SAGE: A Realistic Benchmark for Semantic Understanding",
     "score": 25,
-    "url": "https://arxiv.org/abs/2509.15207v1"
+    "url": "https://arxiv.org/abs/2509.21310v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "FlowRL: Matching Reward Distributions for LLM Reasoning",
+      "title": "SAGE: A Realistic Benchmark for Semantic Understanding",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.15207v1"
+      "url": "https://arxiv.org/abs/2509.21310v1"
     },
     {
       "rank": 2,
-      "title": "SMARTER: A Data-efficient Framework to Improve Toxicity Detection with\n  Explanation via Self-augmenting Large Language Models",
+      "title": "DisCoCLIP: A Distributional Compositional Tensor Network Encoder for\n  Vision-Language Understanding",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.15174v1"
+      "url": "https://arxiv.org/abs/2509.21287v1"
     },
     {
       "rank": 3,
-      "title": "Internalizing Self-Consistency in Language Models: Multi-Agent Consensus\n  Alignment",
+      "title": "It's Not You, It's Clipping: A Soft Trust-Region via Probability\n  Smoothing for LLM RL",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.15172v1"
+      "url": "https://arxiv.org/abs/2509.21282v1"
     },
     {
       "rank": 4,
-      "title": "Cross-Modal Knowledge Distillation for Speech Large Language Models",
+      "title": "Semantic Edge-Cloud Communication for Real-Time Urban Traffic\n  Surveillance with ViT and LLMs over Mobile Networks",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.14930v1"
+      "url": "https://arxiv.org/abs/2509.21259v1"
     },
     {
       "rank": 5,
-      "title": "Empathy-R1: A Chain-of-Empathy and Reinforcement Learning Framework for\n  Long-Form Mental Health Support",
+      "title": "Instruction-tuned Self-Questioning Framework for Multimodal Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2509.14851v1"
+      "url": "https://arxiv.org/abs/2509.21251v1"
     }
   ]
 }
