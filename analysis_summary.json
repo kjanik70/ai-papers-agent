@@ -1,52 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251003.md",
-  "date": "2025-10-03T19:41:44.504415",
+  "filename": "ai_papers_weekly_20251010.md",
+  "date": "2025-10-10T19:51:35.288942",
   "paper_count": 5,
   "categories": [
-    "cs.LG",
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "F2LLM Technical Report: Matching SOTA Embedding Performance with 6\n  Million Open-Source Data",
+    "title": "ArenaBencher: Automatic Benchmark Evolution via Multi-Model Competitive\n  Evaluation",
     "score": 25,
-    "url": "https://arxiv.org/abs/2510.02294v1"
+    "url": "https://arxiv.org/abs/2510.08569v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "F2LLM Technical Report: Matching SOTA Embedding Performance with 6\n  Million Open-Source Data",
+      "title": "ArenaBencher: Automatic Benchmark Evolution via Multi-Model Competitive\n  Evaluation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.02294v1"
+      "url": "https://arxiv.org/abs/2510.08569v1"
     },
     {
       "rank": 2,
-      "title": "KaVa: Latent Reasoning via Compressed KV-Cache Distillation",
+      "title": "MATRIX: Multimodal Agent Tuning for Robust Tool-Use Reasoning",
       "score": 25,
-      "category": "cs.LG",
-      "url": "https://arxiv.org/abs/2510.02312v1"
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2510.08567v1"
     },
     {
       "rank": 3,
-      "title": "VidGuard-R1: AI-Generated Video Detection and Explanation via Reasoning\n  MLLMs and RL",
+      "title": "SciVideoBench: Benchmarking Scientific Video Reasoning in Large\n  Multimodal Models",
       "score": 25,
-      "category": "cs.LG",
-      "url": "https://arxiv.org/abs/2510.02282v1"
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2510.08559v1"
     },
     {
       "rank": 4,
-      "title": "RLAD: Training LLMs to Discover Abstractions for Solving Reasoning\n  Problems",
+      "title": "SpatialLadder: Progressive Training for Spatial Reasoning in\n  Vision-Language Models",
       "score": 25,
-      "category": "cs.LG",
-      "url": "https://arxiv.org/abs/2510.02263v1"
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2510.08531v1"
     },
     {
       "rank": 5,
-      "title": "DragFlow: Unleashing DiT Priors with Region Based Supervision for Drag\n  Editing",
+      "title": "To Sink or Not to Sink: Visual Information Pathways in Large\n  Vision-Language Models",
       "score": 25,
-      "category": "cs.LG",
-      "url": "https://arxiv.org/abs/2510.02253v1"
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2510.08510v1"
     }
   ]
 }
