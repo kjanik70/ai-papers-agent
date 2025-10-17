@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251010.md",
-  "date": "2025-10-10T19:51:35.288942",
+  "filename": "ai_papers_weekly_20251017.md",
+  "date": "2025-10-17T19:48:01.428636",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "ArenaBencher: Automatic Benchmark Evolution via Multi-Model Competitive\n  Evaluation",
+    "title": "Attention Is All You Need for KV Cache in Diffusion LLMs",
     "score": 25,
-    "url": "https://arxiv.org/abs/2510.08569v1"
+    "url": "https://arxiv.org/abs/2510.14973v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "ArenaBencher: Automatic Benchmark Evolution via Multi-Model Competitive\n  Evaluation",
+      "title": "Attention Is All You Need for KV Cache in Diffusion LLMs",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.08569v1"
+      "url": "https://arxiv.org/abs/2510.14973v1"
     },
     {
       "rank": 2,
-      "title": "MATRIX: Multimodal Agent Tuning for Robust Tool-Use Reasoning",
+      "title": "TokDrift: When LLM Speaks in Subwords but Code Speaks in Grammar",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.08567v1"
+      "url": "https://arxiv.org/abs/2510.14972v1"
     },
     {
       "rank": 3,
-      "title": "SciVideoBench: Benchmarking Scientific Video Reasoning in Large\n  Multimodal Models",
+      "title": "Information Gain-based Policy Optimization: A Simple and Effective\n  Approach for Multi-Turn LLM Agents",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.08559v1"
+      "url": "https://arxiv.org/abs/2510.14967v1"
     },
     {
       "rank": 4,
-      "title": "SpatialLadder: Progressive Training for Spatial Reasoning in\n  Vision-Language Models",
+      "title": "MetaBench: A Multi-task Benchmark for Assessing LLMs in Metabolomics",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.08531v1"
+      "url": "https://arxiv.org/abs/2510.14944v1"
     },
     {
       "rank": 5,
-      "title": "To Sink or Not to Sink: Visual Information Pathways in Large\n  Vision-Language Models",
+      "title": "LaSeR: Reinforcement Learning with Last-Token Self-Rewarding",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.08510v1"
+      "url": "https://arxiv.org/abs/2510.14943v1"
     }
   ]
 }
