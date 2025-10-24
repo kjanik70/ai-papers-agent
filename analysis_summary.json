@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251017.md",
-  "date": "2025-10-17T19:48:01.428636",
+  "filename": "ai_papers_weekly_20251024.md",
+  "date": "2025-10-24T19:47:50.528511",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Attention Is All You Need for KV Cache in Diffusion LLMs",
+    "title": "Empathic Prompting: Non-Verbal Context Integration for Multimodal LLM\n  Conversations",
     "score": 25,
-    "url": "https://arxiv.org/abs/2510.14973v1"
+    "url": "https://arxiv.org/abs/2510.20743v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Attention Is All You Need for KV Cache in Diffusion LLMs",
+      "title": "Empathic Prompting: Non-Verbal Context Integration for Multimodal LLM\n  Conversations",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.14973v1"
+      "url": "https://arxiv.org/abs/2510.20743v1"
     },
     {
       "rank": 2,
-      "title": "TokDrift: When LLM Speaks in Subwords but Code Speaks in Grammar",
+      "title": "User Perceptions of Privacy and Helpfulness in LLM Responses to\n  Privacy-Sensitive Scenarios",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.14972v1"
+      "url": "https://arxiv.org/abs/2510.20721v1"
     },
     {
       "rank": 3,
-      "title": "Information Gain-based Policy Optimization: A Simple and Effective\n  Approach for Multi-Turn LLM Agents",
+      "title": "Plan Then Retrieve: Reinforcement Learning-Guided Complex Reasoning over\n  Knowledge Graphs",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.14967v1"
+      "url": "https://arxiv.org/abs/2510.20691v1"
     },
     {
       "rank": 4,
-      "title": "MetaBench: A Multi-task Benchmark for Assessing LLMs in Metabolomics",
+      "title": "The Shape of Reasoning: Topological Analysis of Reasoning Traces in\n  Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.14944v1"
+      "url": "https://arxiv.org/abs/2510.20665v1"
     },
     {
       "rank": 5,
-      "title": "LaSeR: Reinforcement Learning with Last-Token Self-Rewarding",
+      "title": "Why Did Apple Fall To The Ground: Evaluating Curiosity In Large Language\n  Model",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.14943v1"
+      "url": "https://arxiv.org/abs/2510.20635v1"
     }
   ]
 }
