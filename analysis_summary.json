@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251024.md",
-  "date": "2025-10-24T19:47:50.528511",
+  "filename": "ai_papers_weekly_20251031.md",
+  "date": "2025-10-31T19:44:23.167215",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Empathic Prompting: Non-Verbal Context Integration for Multimodal LLM\n  Conversations",
+    "title": "Defeating the Training-Inference Mismatch via FP16",
     "score": 25,
-    "url": "https://arxiv.org/abs/2510.20743v1"
+    "url": "https://arxiv.org/abs/2510.26788v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Empathic Prompting: Non-Verbal Context Integration for Multimodal LLM\n  Conversations",
+      "title": "Defeating the Training-Inference Mismatch via FP16",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.20743v1"
+      "url": "https://arxiv.org/abs/2510.26788v1"
     },
     {
       "rank": 2,
-      "title": "User Perceptions of Privacy and Helpfulness in LLM Responses to\n  Privacy-Sensitive Scenarios",
+      "title": "AMO-Bench: Large Language Models Still Struggle in High School Math\n  Competitions",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.20721v1"
+      "url": "https://arxiv.org/abs/2510.26768v1"
     },
     {
       "rank": 3,
-      "title": "Plan Then Retrieve: Reinforcement Learning-Guided Complex Reasoning over\n  Knowledge Graphs",
+      "title": "Unveiling Intrinsic Text Bias in Multimodal Large Language Models\n  through Attention Key-Space Analysis",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.20691v1"
+      "url": "https://arxiv.org/abs/2510.26721v1"
     },
     {
       "rank": 4,
-      "title": "The Shape of Reasoning: Topological Analysis of Reasoning Traces in\n  Large Language Models",
+      "title": "Evontree: Ontology Rule-Guided Self-Evolution of Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.20665v1"
+      "url": "https://arxiv.org/abs/2510.26683v1"
     },
     {
       "rank": 5,
-      "title": "Why Did Apple Fall To The Ground: Evaluating Curiosity In Large Language\n  Model",
+      "title": "Normative Reasoning in Large Language Models: A Comparative Benchmark\n  from Logical and Modal Perspectives",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.20635v1"
+      "url": "https://arxiv.org/abs/2510.26606v1"
     }
   ]
 }
