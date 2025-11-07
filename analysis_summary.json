@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251031.md",
-  "date": "2025-10-31T19:44:23.167215",
+  "filename": "ai_papers_weekly_20251107.md",
+  "date": "2025-11-07T19:40:33.946746",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Defeating the Training-Inference Mismatch via FP16",
+    "title": "VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical\n  Consistency Checks",
     "score": 25,
-    "url": "https://arxiv.org/abs/2510.26788v1"
+    "url": "https://arxiv.org/abs/2511.04662v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Defeating the Training-Inference Mismatch via FP16",
+      "title": "VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical\n  Consistency Checks",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.26788v1"
+      "url": "https://arxiv.org/abs/2511.04662v1"
     },
     {
       "rank": 2,
-      "title": "AMO-Bench: Large Language Models Still Struggle in High School Math\n  Competitions",
+      "title": "DR. WELL: Dynamic Reasoning and Learning with Symbolic World Model for\n  Embodied LLM-Based Multi-Agent Collaboration",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.26768v1"
+      "url": "https://arxiv.org/abs/2511.04646v1"
     },
     {
       "rank": 3,
-      "title": "Unveiling Intrinsic Text Bias in Multimodal Large Language Models\n  through Attention Key-Space Analysis",
+      "title": "Large language models replicate and predict human cooperation across\n  experiments in game theory",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.26721v1"
+      "url": "https://arxiv.org/abs/2511.04500v1"
     },
     {
       "rank": 4,
-      "title": "Evontree: Ontology Rule-Guided Self-Evolution of Large Language Models",
+      "title": "RUST-BENCH: Benchmarking LLM Reasoning on Unstructured Text within\n  Structured Tables",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.26683v1"
+      "url": "https://arxiv.org/abs/2511.04491v1"
     },
     {
       "rank": 5,
-      "title": "Normative Reasoning in Large Language Models: A Comparative Benchmark\n  from Logical and Modal Perspectives",
+      "title": "Post-Training LLMs as Better Decision-Making Agents: A\n  Regret-Minimization Approach",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2510.26606v1"
+      "url": "https://arxiv.org/abs/2511.04393v1"
     }
   ]
 }
