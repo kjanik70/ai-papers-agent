@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251107.md",
-  "date": "2025-11-07T19:40:33.946746",
+  "filename": "ai_papers_weekly_20251118.md",
+  "date": "2025-11-18T04:11:35.725936",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical\n  Consistency Checks",
+    "title": "SGuard-v1: Safety Guardrail for Large Language Models",
     "score": 25,
-    "url": "https://arxiv.org/abs/2511.04662v1"
+    "url": "https://arxiv.org/abs/2511.12497v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical\n  Consistency Checks",
+      "title": "SGuard-v1: Safety Guardrail for Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.04662v1"
+      "url": "https://arxiv.org/abs/2511.12497v1"
     },
     {
       "rank": 2,
-      "title": "DR. WELL: Dynamic Reasoning and Learning with Symbolic World Model for\n  Embodied LLM-Based Multi-Agent Collaboration",
+      "title": "ARCHE: A Novel Task to Evaluate LLMs on Latent Reasoning Chain Extraction",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.04646v1"
+      "url": "https://arxiv.org/abs/2511.12485v1"
     },
     {
       "rank": 3,
-      "title": "Large language models replicate and predict human cooperation across\n  experiments in game theory",
+      "title": "Assessing LLMs for Serendipity Discovery in Knowledge Graphs: A Case for Drug Repurposing",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.04500v1"
+      "url": "https://arxiv.org/abs/2511.12472v1"
     },
     {
       "rank": 4,
-      "title": "RUST-BENCH: Benchmarking LLM Reasoning on Unstructured Text within\n  Structured Tables",
+      "title": "Personality-guided Public-Private Domain Disentangled Hypergraph-Former Network for Multimodal Depression Detection",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.04491v1"
+      "url": "https://arxiv.org/abs/2511.12460v1"
     },
     {
       "rank": 5,
-      "title": "Post-Training LLMs as Better Decision-Making Agents: A\n  Regret-Minimization Approach",
+      "title": "MOON2.0: Dynamic Modality-balanced Multimodal Representation Learning for E-commerce Product Understanding",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.04393v1"
+      "url": "https://arxiv.org/abs/2511.12449v1"
     }
   ]
 }
