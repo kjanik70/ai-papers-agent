@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251118.md",
-  "date": "2025-11-18T04:11:35.725936",
+  "filename": "ai_papers_weekly_20251121.md",
+  "date": "2025-11-21T19:47:01.949265",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "SGuard-v1: Safety Guardrail for Large Language Models",
+    "title": "Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation",
     "score": 25,
-    "url": "https://arxiv.org/abs/2511.12497v1"
+    "url": "https://arxiv.org/abs/2511.16671v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "SGuard-v1: Safety Guardrail for Large Language Models",
+      "title": "Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.12497v1"
+      "url": "https://arxiv.org/abs/2511.16671v1"
     },
     {
       "rank": 2,
-      "title": "ARCHE: A Novel Task to Evaluate LLMs on Latent Reasoning Chain Extraction",
+      "title": "Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.12485v1"
+      "url": "https://arxiv.org/abs/2511.16665v1"
     },
     {
       "rank": 3,
-      "title": "Assessing LLMs for Serendipity Discovery in Knowledge Graphs: A Case for Drug Repurposing",
+      "title": "Cognitive Foundations for Reasoning and Their Manifestation in LLMs",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.12472v1"
+      "url": "https://arxiv.org/abs/2511.16660v1"
     },
     {
       "rank": 4,
-      "title": "Personality-guided Public-Private Domain Disentangled Hypergraph-Former Network for Multimodal Depression Detection",
+      "title": "You Only Forward Once: An Efficient Compositional Judging Paradigm",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.12460v1"
+      "url": "https://arxiv.org/abs/2511.16600v1"
     },
     {
       "rank": 5,
-      "title": "MOON2.0: Dynamic Modality-balanced Multimodal Representation Learning for E-commerce Product Understanding",
+      "title": "TimeViper: A Hybrid Mamba-Transformer Vision-Language Model for Efficient Long Video Understanding",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.12449v1"
+      "url": "https://arxiv.org/abs/2511.16595v1"
     }
   ]
 }
