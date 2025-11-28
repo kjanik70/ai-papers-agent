@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251121.md",
-  "date": "2025-11-21T19:47:01.949265",
+  "filename": "ai_papers_weekly_20251128.md",
+  "date": "2025-11-28T19:50:04.255850",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation",
+    "title": "ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration",
     "score": 25,
-    "url": "https://arxiv.org/abs/2511.16671v1"
+    "url": "https://arxiv.org/abs/2511.21689v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation",
+      "title": "ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.16671v1"
+      "url": "https://arxiv.org/abs/2511.21689v1"
     },
     {
       "rank": 2,
-      "title": "Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter",
+      "title": "Agentic Learner with Grow-and-Refine Multimodal Semantic Memory",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.16665v1"
+      "url": "https://arxiv.org/abs/2511.21678v1"
     },
     {
       "rank": 3,
-      "title": "Cognitive Foundations for Reasoning and Their Manifestation in LLMs",
+      "title": "On the Limits of Innate Planning in Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.16660v1"
+      "url": "https://arxiv.org/abs/2511.21591v1"
     },
     {
       "rank": 4,
-      "title": "You Only Forward Once: An Efficient Compositional Judging Paradigm",
+      "title": "Tool-RoCo: An Agent-as-Tool Self-organization Large Language Model Benchmark in Multi-robot Cooperation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.16600v1"
+      "url": "https://arxiv.org/abs/2511.21510v1"
     },
     {
       "rank": 5,
-      "title": "TimeViper: A Hybrid Mamba-Transformer Vision-Language Model for Efficient Long Video Understanding",
+      "title": "SpatialBench: Benchmarking Multimodal Large Language Models for Spatial Cognition",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.16595v1"
+      "url": "https://arxiv.org/abs/2511.21471v1"
     }
   ]
 }
