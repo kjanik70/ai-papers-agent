@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251128.md",
-  "date": "2025-11-28T19:50:04.255850",
+  "filename": "ai_papers_weekly_20251205.md",
+  "date": "2025-12-05T19:54:37.206163",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration",
+    "title": "DraCo: Draft as CoT for Text-to-Image Preview and Rare Concept Generation",
     "score": 25,
-    "url": "https://arxiv.org/abs/2511.21689v1"
+    "url": "https://arxiv.org/abs/2512.05112v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration",
+      "title": "DraCo: Draft as CoT for Text-to-Image Preview and Rare Concept Generation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.21689v1"
+      "url": "https://arxiv.org/abs/2512.05112v1"
     },
     {
       "rank": 2,
-      "title": "Agentic Learner with Grow-and-Refine Multimodal Semantic Memory",
+      "title": "Semantic Soft Bootstrapping: Long Context Reasoning in LLMs without Reinforcement Learning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.21678v1"
+      "url": "https://arxiv.org/abs/2512.05105v1"
     },
     {
       "rank": 3,
-      "title": "On the Limits of Innate Planning in Large Language Models",
+      "title": "TV2TV: A Unified Framework for Interleaved Language and Video Generation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.21591v1"
+      "url": "https://arxiv.org/abs/2512.05103v1"
     },
     {
       "rank": 4,
-      "title": "Tool-RoCo: An Agent-as-Tool Self-organization Large Language Model Benchmark in Multi-robot Cooperation",
+      "title": "Reflection Removal through Efficient Adaptation of Diffusion Transformers",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.21510v1"
+      "url": "https://arxiv.org/abs/2512.05000v1"
     },
     {
       "rank": 5,
-      "title": "SpatialBench: Benchmarking Multimodal Large Language Models for Spatial Cognition",
+      "title": "STELLA: Guiding Large Language Models for Time Series Forecasting with Semantic Abstractions",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2511.21471v1"
+      "url": "https://arxiv.org/abs/2512.04871v1"
     }
   ]
 }
