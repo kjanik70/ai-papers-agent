@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251205.md",
-  "date": "2025-12-05T19:54:37.206163",
+  "filename": "ai_papers_weekly_20251212.md",
+  "date": "2025-12-12T19:53:46.209303",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "DraCo: Draft as CoT for Text-to-Image Preview and Rare Concept Generation",
+    "title": "Are We Ready for RL in Text-to-3D Generation? A Progressive Investigation",
     "score": 25,
-    "url": "https://arxiv.org/abs/2512.05112v1"
+    "url": "https://arxiv.org/abs/2512.10949v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "DraCo: Draft as CoT for Text-to-Image Preview and Rare Concept Generation",
+      "title": "Are We Ready for RL in Text-to-3D Generation? A Progressive Investigation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.05112v1"
+      "url": "https://arxiv.org/abs/2512.10949v1"
     },
     {
       "rank": 2,
-      "title": "Semantic Soft Bootstrapping: Long Context Reasoning in LLMs without Reinforcement Learning",
+      "title": "BabyVLM-V2: Toward Developmentally Grounded Pretraining and Benchmarking of Vision Foundation Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.05105v1"
+      "url": "https://arxiv.org/abs/2512.10932v1"
     },
     {
       "rank": 3,
-      "title": "TV2TV: A Unified Framework for Interleaved Language and Video Generation",
+      "title": "SparseSwaps: Tractable LLM Pruning Mask Refinement at Scale",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.05103v1"
+      "url": "https://arxiv.org/abs/2512.10922v1"
     },
     {
       "rank": 4,
-      "title": "Reflection Removal through Efficient Adaptation of Diffusion Transformers",
+      "title": "LabelFusion: Learning to Fuse LLMs and Transformer Classifiers for Robust Text Classification",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.05000v1"
+      "url": "https://arxiv.org/abs/2512.10793v1"
     },
     {
       "rank": 5,
-      "title": "STELLA: Guiding Large Language Models for Time Series Forecasting with Semantic Abstractions",
+      "title": "The FACTS Leaderboard: A Comprehensive Benchmark for Large Language Model Factuality",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.04871v1"
+      "url": "https://arxiv.org/abs/2512.10791v1"
     }
   ]
 }
