@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251212.md",
-  "date": "2025-12-12T19:53:46.209303",
+  "filename": "ai_papers_weekly_20251219.md",
+  "date": "2025-12-19T19:52:25.931693",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Are We Ready for RL in Text-to-3D Generation? A Progressive Investigation",
+    "title": "Differences That Matter: Auditing Models for Capability Gap Discovery and Rectification",
     "score": 25,
-    "url": "https://arxiv.org/abs/2512.10949v1"
+    "url": "https://arxiv.org/abs/2512.16921v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Are We Ready for RL in Text-to-3D Generation? A Progressive Investigation",
+      "title": "Differences That Matter: Auditing Models for Capability Gap Discovery and Rectification",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.10949v1"
+      "url": "https://arxiv.org/abs/2512.16921v1"
     },
     {
       "rank": 2,
-      "title": "BabyVLM-V2: Toward Developmentally Grounded Pretraining and Benchmarking of Vision Foundation Models",
+      "title": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinforcement Learning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.10932v1"
+      "url": "https://arxiv.org/abs/2512.16917v1"
     },
     {
       "rank": 3,
-      "title": "SparseSwaps: Tractable LLM Pruning Mask Refinement at Scale",
+      "title": "Exploration v.s. Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.10922v1"
+      "url": "https://arxiv.org/abs/2512.16912v1"
     },
     {
       "rank": 4,
-      "title": "LabelFusion: Learning to Fuse LLMs and Transformer Classifiers for Robust Text Classification",
+      "title": "LinkedOut: Linking World Knowledge Representation Out of Video LLM for Next-Generation Video Recommendation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.10793v1"
+      "url": "https://arxiv.org/abs/2512.16891v1"
     },
     {
       "rank": 5,
-      "title": "The FACTS Leaderboard: A Comprehensive Benchmark for Large Language Model Factuality",
+      "title": "TOGGLE: Temporal Logic-Guided Large Language Model Compression for Edge",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.10791v1"
+      "url": "https://arxiv.org/abs/2512.16855v1"
     }
   ]
 }
