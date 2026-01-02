@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20251219.md",
-  "date": "2025-12-19T19:52:25.931693",
+  "filename": "ai_papers_weekly_20260102.md",
+  "date": "2026-01-02T19:47:05.025787",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Differences That Matter: Auditing Models for Capability Gap Discovery and Rectification",
+    "title": "RAIR: A Rule-Aware Benchmark Uniting Challenging Long-Tail and Visual Salience Subset for E-commerce Relevance Assessment",
     "score": 25,
-    "url": "https://arxiv.org/abs/2512.16921v1"
+    "url": "https://arxiv.org/abs/2512.24943v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Differences That Matter: Auditing Models for Capability Gap Discovery and Rectification",
+      "title": "RAIR: A Rule-Aware Benchmark Uniting Challenging Long-Tail and Visual Salience Subset for E-commerce Relevance Assessment",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.16921v1"
+      "url": "https://arxiv.org/abs/2512.24943v1"
     },
     {
       "rank": 2,
-      "title": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinforcement Learning",
+      "title": "Encyclo-K: Evaluating LLMs with Dynamically Composed Knowledge Statements",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.16917v1"
+      "url": "https://arxiv.org/abs/2512.24867v1"
     },
     {
       "rank": 3,
-      "title": "Exploration v.s. Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward",
+      "title": "Evolving, Not Training: Zero-Shot Reasoning Segmentation via Evolutionary Prompting",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.16912v1"
+      "url": "https://arxiv.org/abs/2512.24702v1"
     },
     {
       "rank": 4,
-      "title": "LinkedOut: Linking World Knowledge Representation Out of Video LLM for Next-Generation Video Recommendation",
+      "title": "BatteryAgent: Synergizing Physics-Informed Interpretation with LLM Reasoning for Intelligent Battery Fault Diagnosis",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.16891v1"
+      "url": "https://arxiv.org/abs/2512.24686v1"
     },
     {
       "rank": 5,
-      "title": "TOGGLE: Temporal Logic-Guided Large Language Model Compression for Edge",
+      "title": "Do Large Language Models Know What They Are Capable Of?",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.16855v1"
+      "url": "https://arxiv.org/abs/2512.24661v1"
     }
   ]
 }
