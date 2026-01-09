@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260102.md",
-  "date": "2026-01-02T19:47:05.025787",
+  "filename": "ai_papers_weekly_20260109.md",
+  "date": "2026-01-09T19:54:01.071681",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "RAIR: A Rule-Aware Benchmark Uniting Challenging Long-Tail and Visual Salience Subset for E-commerce Relevance Assessment",
+    "title": "SimuAgent: An LLM-Based Simulink Modeling Assistant Enhanced with Reinforcement Learning",
     "score": 25,
-    "url": "https://arxiv.org/abs/2512.24943v1"
+    "url": "https://arxiv.org/abs/2601.05187v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "RAIR: A Rule-Aware Benchmark Uniting Challenging Long-Tail and Visual Salience Subset for E-commerce Relevance Assessment",
+      "title": "SimuAgent: An LLM-Based Simulink Modeling Assistant Enhanced with Reinforcement Learning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.24943v1"
+      "url": "https://arxiv.org/abs/2601.05187v1"
     },
     {
       "rank": 2,
-      "title": "Encyclo-K: Evaluating LLMs with Dynamically Composed Knowledge Statements",
+      "title": "RelayLLM: Efficient Reasoning via Collaborative Decoding",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.24867v1"
+      "url": "https://arxiv.org/abs/2601.05167v1"
     },
     {
       "rank": 3,
-      "title": "Evolving, Not Training: Zero-Shot Reasoning Segmentation via Evolutionary Prompting",
+      "title": "Vision-Language Introspection: Mitigating Overconfident Hallucinations in MLLMs via Interpretable Bi-Causal Steering",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.24702v1"
+      "url": "https://arxiv.org/abs/2601.05159v1"
     },
     {
       "rank": 4,
-      "title": "BatteryAgent: Synergizing Physics-Informed Interpretation with LLM Reasoning for Intelligent Battery Fault Diagnosis",
+      "title": "Distilling the Thought, Watermarking the Answer: A Principle Semantic Guided Watermark for Large Reasoning Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.24686v1"
+      "url": "https://arxiv.org/abs/2601.05144v1"
     },
     {
       "rank": 5,
-      "title": "Do Large Language Models Know What They Are Capable Of?",
+      "title": "Token-Level LLM Collaboration via FusionRoute",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2512.24661v1"
+      "url": "https://arxiv.org/abs/2601.05106v1"
     }
   ]
 }
