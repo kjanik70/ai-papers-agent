@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260109.md",
-  "date": "2026-01-09T19:54:01.071681",
+  "filename": "ai_papers_weekly_20260116.md",
+  "date": "2026-01-16T19:55:42.944593",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "SimuAgent: An LLM-Based Simulink Modeling Assistant Enhanced with Reinforcement Learning",
+    "title": "MatchTIR: Fine-Grained Supervision for Tool-Integrated Reasoning via Bipartite Matching",
     "score": 25,
-    "url": "https://arxiv.org/abs/2601.05187v1"
+    "url": "https://arxiv.org/abs/2601.10712v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "SimuAgent: An LLM-Based Simulink Modeling Assistant Enhanced with Reinforcement Learning",
+      "title": "MatchTIR: Fine-Grained Supervision for Tool-Integrated Reasoning via Bipartite Matching",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.05187v1"
+      "url": "https://arxiv.org/abs/2601.10712v1"
     },
     {
       "rank": 2,
-      "title": "RelayLLM: Efficient Reasoning via Collaborative Decoding",
+      "title": "From Single to Multi-Agent Reasoning: Advancing GeneGPT for Genomics QA",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.05167v1"
+      "url": "https://arxiv.org/abs/2601.10581v1"
     },
     {
       "rank": 3,
-      "title": "Vision-Language Introspection: Mitigating Overconfident Hallucinations in MLLMs via Interpretable Bi-Causal Steering",
+      "title": "Generative AI collective behavior needs an interactionist paradigm",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.05159v1"
+      "url": "https://arxiv.org/abs/2601.10567v1"
     },
     {
       "rank": 4,
-      "title": "Distilling the Thought, Watermarking the Answer: A Principle Semantic Guided Watermark for Large Reasoning Models",
+      "title": "Defending Large Language Models Against Jailbreak Attacks via In-Decoding Safety-Awareness Probing",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.05144v1"
+      "url": "https://arxiv.org/abs/2601.10543v1"
     },
     {
       "rank": 5,
-      "title": "Token-Level LLM Collaboration via FusionRoute",
+      "title": "A Safety Report on GPT-5.2, Gemini 3 Pro, Qwen3-VL, Doubao 1.8, Grok 4.1 Fast, Nano Banana Pro, and Seedream 4.5",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.05106v1"
+      "url": "https://arxiv.org/abs/2601.10527v1"
     }
   ]
 }
