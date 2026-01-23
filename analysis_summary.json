@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260116.md",
-  "date": "2026-01-16T19:55:42.944593",
+  "filename": "ai_papers_weekly_20260123.md",
+  "date": "2026-01-23T19:56:04.863103",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "MatchTIR: Fine-Grained Supervision for Tool-Integrated Reasoning via Bipartite Matching",
+    "title": "Grounding Large Language Models in Reaction Knowledge Graphs for Synthesis Retrieval",
     "score": 25,
-    "url": "https://arxiv.org/abs/2601.10712v1"
+    "url": "https://arxiv.org/abs/2601.16038v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "MatchTIR: Fine-Grained Supervision for Tool-Integrated Reasoning via Bipartite Matching",
+      "title": "Grounding Large Language Models in Reaction Knowledge Graphs for Synthesis Retrieval",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.10712v1"
+      "url": "https://arxiv.org/abs/2601.16038v1"
     },
     {
       "rank": 2,
-      "title": "From Single to Multi-Agent Reasoning: Advancing GeneGPT for Genomics QA",
+      "title": "Deja Vu in Plots: Leveraging Cross-Session Evidence with Retrieval-Augmented LLMs for Live Streaming Risk Assessment",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.10581v1"
+      "url": "https://arxiv.org/abs/2601.16027v1"
     },
     {
       "rank": 3,
-      "title": "Generative AI collective behavior needs an interactionist paradigm",
+      "title": "PhysicsMind: Sim and Real Mechanics Benchmarking for Physical Reasoning and Prediction in Foundational VLMs and World Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.10567v1"
+      "url": "https://arxiv.org/abs/2601.16007v1"
     },
     {
       "rank": 4,
-      "title": "Defending Large Language Models Against Jailbreak Attacks via In-Decoding Safety-Awareness Probing",
+      "title": "ErrorMap and ErrorAtlas: Charting the Failure Landscape of Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.10543v1"
+      "url": "https://arxiv.org/abs/2601.15812v1"
     },
     {
       "rank": 5,
-      "title": "A Safety Report on GPT-5.2, Gemini 3 Pro, Qwen3-VL, Doubao 1.8, Grok 4.1 Fast, Nano Banana Pro, and Seedream 4.5",
+      "title": "VideoThinker: Building Agentic VideoLLMs with LLM-Guided Tool Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.10527v1"
+      "url": "https://arxiv.org/abs/2601.15724v1"
     }
   ]
 }
