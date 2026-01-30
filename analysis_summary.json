@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260123.md",
-  "date": "2026-01-23T19:56:04.863103",
+  "filename": "ai_papers_weekly_20260130.md",
+  "date": "2026-01-30T20:11:21.492687",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Grounding Large Language Models in Reaction Knowledge Graphs for Synthesis Retrieval",
+    "title": "DynaWeb: Model-Based Reinforcement Learning of Web Agents",
     "score": 25,
-    "url": "https://arxiv.org/abs/2601.16038v1"
+    "url": "https://arxiv.org/abs/2601.22149v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Grounding Large Language Models in Reaction Knowledge Graphs for Synthesis Retrieval",
+      "title": "DynaWeb: Model-Based Reinforcement Learning of Web Agents",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.16038v1"
+      "url": "https://arxiv.org/abs/2601.22149v1"
     },
     {
       "rank": 2,
-      "title": "Deja Vu in Plots: Leveraging Cross-Session Evidence with Retrieval-Augmented LLMs for Live Streaming Risk Assessment",
+      "title": "Reasoning While Asking: Transforming Reasoning Large Language Models from Passive Solvers to Proactive Inquirers",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.16027v1"
+      "url": "https://arxiv.org/abs/2601.22139v1"
     },
     {
       "rank": 3,
-      "title": "PhysicsMind: Sim and Real Mechanics Benchmarking for Physical Reasoning and Prediction in Foundational VLMs and World Models",
+      "title": "Vision-DeepResearch: Incentivizing DeepResearch Capability in Multimodal Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.16007v1"
+      "url": "https://arxiv.org/abs/2601.22060v1"
     },
     {
       "rank": 4,
-      "title": "ErrorMap and ErrorAtlas: Charting the Failure Landscape of Large Language Models",
+      "title": "Thinking Out of Order: When Output Order Stops Reflecting Reasoning Order in Diffusion Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.15812v1"
+      "url": "https://arxiv.org/abs/2601.22035v1"
     },
     {
       "rank": 5,
-      "title": "VideoThinker: Building Agentic VideoLLMs with LLM-Guided Tool Reasoning",
+      "title": "CAR-bench: Evaluating the Consistency and Limit-Awareness of LLM Agents under Real-World Uncertainty",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.15724v1"
+      "url": "https://arxiv.org/abs/2601.22027v1"
     }
   ]
 }
