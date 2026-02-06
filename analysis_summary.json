@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260130.md",
-  "date": "2026-01-30T20:11:21.492687",
+  "filename": "ai_papers_weekly_20260206.md",
+  "date": "2026-02-06T20:19:17.246834",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "DynaWeb: Model-Based Reinforcement Learning of Web Agents",
+    "title": "DyTopo: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching",
     "score": 25,
-    "url": "https://arxiv.org/abs/2601.22149v1"
+    "url": "https://arxiv.org/abs/2602.06039v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "DynaWeb: Model-Based Reinforcement Learning of Web Agents",
+      "title": "DyTopo: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.22149v1"
+      "url": "https://arxiv.org/abs/2602.06039v1"
     },
     {
       "rank": 2,
-      "title": "Reasoning While Asking: Transforming Reasoning Large Language Models from Passive Solvers to Proactive Inquirers",
+      "title": "AgenticPay: A Multi-Agent LLM Negotiation System for Buyer-Seller Transactions",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.22139v1"
+      "url": "https://arxiv.org/abs/2602.06008v1"
     },
     {
       "rank": 3,
-      "title": "Vision-DeepResearch: Incentivizing DeepResearch Capability in Multimodal Large Language Models",
+      "title": "RISE-Video: Can Video Generators Decode Implicit World Rules?",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.22060v1"
+      "url": "https://arxiv.org/abs/2602.05986v1"
     },
     {
       "rank": 4,
-      "title": "Thinking Out of Order: When Output Order Stops Reflecting Reasoning Order in Diffusion Language Models",
+      "title": "EuroLLM-22B: Technical Report",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.22035v1"
+      "url": "https://arxiv.org/abs/2602.05879v1"
     },
     {
       "rank": 5,
-      "title": "CAR-bench: Evaluating the Consistency and Limit-Awareness of LLM Agents under Real-World Uncertainty",
+      "title": "BABE: Biology Arena BEnchmark",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2601.22027v1"
+      "url": "https://arxiv.org/abs/2602.05857v1"
     }
   ]
 }
