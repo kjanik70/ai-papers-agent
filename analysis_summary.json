@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260206.md",
-  "date": "2026-02-06T20:19:17.246834",
+  "filename": "ai_papers_weekly_20260220.md",
+  "date": "2026-02-20T20:14:11.159128",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "DyTopo: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching",
+    "title": "Stable Asynchrony: Variance-Controlled Off-Policy RL for LLMs",
     "score": 25,
-    "url": "https://arxiv.org/abs/2602.06039v1"
+    "url": "https://arxiv.org/abs/2602.17616v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "DyTopo: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching",
+      "title": "Stable Asynchrony: Variance-Controlled Off-Policy RL for LLMs",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2602.06039v1"
+      "url": "https://arxiv.org/abs/2602.17616v1"
     },
     {
       "rank": 2,
-      "title": "AgenticPay: A Multi-Agent LLM Negotiation System for Buyer-Seller Transactions",
+      "title": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2602.06008v1"
+      "url": "https://arxiv.org/abs/2602.17560v1"
     },
     {
       "rank": 3,
-      "title": "RISE-Video: Can Video Generators Decode Implicit World Rules?",
+      "title": "MASPO: Unifying Gradient Utilization, Probability Mass, and Signal Reliability for Robust and Sample-Efficient LLM Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2602.05986v1"
+      "url": "https://arxiv.org/abs/2602.17550v1"
     },
     {
       "rank": 4,
-      "title": "EuroLLM-22B: Technical Report",
+      "title": "Evaluating Chain-of-Thought Reasoning through Reusability and Verifiability",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2602.05879v1"
+      "url": "https://arxiv.org/abs/2602.17544v1"
     },
     {
       "rank": 5,
-      "title": "BABE: Biology Arena BEnchmark",
+      "title": "Enhancing Large Language Models (LLMs) for Telecom using Dynamic Knowledge Graphs and Explainable Retrieval-Augmented Generation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2602.05857v1"
+      "url": "https://arxiv.org/abs/2602.17529v1"
     }
   ]
 }
