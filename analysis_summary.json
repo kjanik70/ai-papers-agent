@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260306.md",
-  "date": "2026-03-06T20:13:25.572242",
+  "filename": "ai_papers_weekly_20260313.md",
+  "date": "2026-03-13T20:10:11.460222",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Censored LLMs as a Natural Testbed for Secret Knowledge Elicitation",
+    "title": "SciMDR: Benchmarking and Advancing Scientific Multimodal Document Reasoning",
     "score": 25,
-    "url": "https://arxiv.org/abs/2603.05494v1"
+    "url": "https://arxiv.org/abs/2603.12249v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Censored LLMs as a Natural Testbed for Secret Knowledge Elicitation",
+      "title": "SciMDR: Benchmarking and Advancing Scientific Multimodal Document Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.05494v1"
+      "url": "https://arxiv.org/abs/2603.12249v1"
     },
     {
       "rank": 2,
-      "title": "Reasoning Theater: Disentangling Model Beliefs from Chain-of-Thought",
+      "title": "Examining Reasoning LLMs-as-Judges in Non-Verifiable LLM Post-Training",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.05488v1"
+      "url": "https://arxiv.org/abs/2603.12246v1"
     },
     {
       "rank": 3,
-      "title": "Leveraging LLM Parametric Knowledge for Fact Checking without Retrieval",
+      "title": "IsoCompute Playbook: Optimally Scaling Sampling Compute for LLM RL",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.05471v1"
+      "url": "https://arxiv.org/abs/2603.12151v1"
     },
     {
       "rank": 4,
-      "title": "Distributed Partial Information Puzzles: Examining Common Ground Construction Under Epistemic Asymmetry",
+      "title": "TopoBench: Benchmarking LLMs on Hard Topological Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.05450v1"
+      "url": "https://arxiv.org/abs/2603.12133v1"
     },
     {
       "rank": 5,
-      "title": "Med-V1: Small Language Models for Zero-shot and Scalable Biomedical Evidence Attribution",
+      "title": "On Information Self-Locking in Reinforcement Learning for Active Reasoning of LLM agents",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.05308v1"
+      "url": "https://arxiv.org/abs/2603.12109v1"
     }
   ]
 }
