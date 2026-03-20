@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260313.md",
-  "date": "2026-03-13T20:10:11.460222",
+  "filename": "ai_papers_weekly_20260320.md",
+  "date": "2026-03-20T20:16:02.809127",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "SciMDR: Benchmarking and Advancing Scientific Multimodal Document Reasoning",
+    "title": "FinTradeBench: A Financial Reasoning Benchmark for LLMs",
     "score": 25,
-    "url": "https://arxiv.org/abs/2603.12249v1"
+    "url": "https://arxiv.org/abs/2603.19225v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "SciMDR: Benchmarking and Advancing Scientific Multimodal Document Reasoning",
+      "title": "FinTradeBench: A Financial Reasoning Benchmark for LLMs",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.12249v1"
+      "url": "https://arxiv.org/abs/2603.19225v1"
     },
     {
       "rank": 2,
-      "title": "Examining Reasoning LLMs-as-Judges in Non-Verifiable LLM Post-Training",
+      "title": "Box Maze: A Process-Control Architecture for Reliable LLM Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.12246v1"
+      "url": "https://arxiv.org/abs/2603.19182v1"
     },
     {
       "rank": 3,
-      "title": "IsoCompute Playbook: Optimally Scaling Sampling Compute for LLM RL",
+      "title": "UGID: Unified Graph Isomorphism for Debiasing Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.12151v1"
+      "url": "https://arxiv.org/abs/2603.19144v1"
     },
     {
       "rank": 4,
-      "title": "TopoBench: Benchmarking LLMs on Hard Topological Reasoning",
+      "title": "Parallelograms Strike Back: LLMs Generate Better Analogies than People",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.12133v1"
+      "url": "https://arxiv.org/abs/2603.19066v1"
     },
     {
       "rank": 5,
-      "title": "On Information Self-Locking in Reinforcement Learning for Active Reasoning of LLM agents",
+      "title": "What Really Controls Temporal Reasoning in Large Language Models: Tokenisation or Representation of Time?",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.12109v1"
+      "url": "https://arxiv.org/abs/2603.19017v1"
     }
   ]
 }
