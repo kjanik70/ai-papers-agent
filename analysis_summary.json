@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260320.md",
-  "date": "2026-03-20T20:16:02.809127",
+  "filename": "ai_papers_weekly_20260327.md",
+  "date": "2026-03-27T20:19:43.722874",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "FinTradeBench: A Financial Reasoning Benchmark for LLMs",
+    "title": "R-C2: Cycle-Consistent Reinforcement Learning Improves Multimodal Reasoning",
     "score": 25,
-    "url": "https://arxiv.org/abs/2603.19225v1"
+    "url": "https://arxiv.org/abs/2603.25720v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "FinTradeBench: A Financial Reasoning Benchmark for LLMs",
+      "title": "R-C2: Cycle-Consistent Reinforcement Learning Improves Multimodal Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.19225v1"
+      "url": "https://arxiv.org/abs/2603.25720v1"
     },
     {
       "rank": 2,
-      "title": "Box Maze: A Process-Control Architecture for Reliable LLM Reasoning",
+      "title": "Is Mathematical Problem-Solving Expertise in Large Language Models Associated with Assessment Performance?",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.19182v1"
+      "url": "https://arxiv.org/abs/2603.25633v1"
     },
     {
       "rank": 3,
-      "title": "UGID: Unified Graph Isomorphism for Debiasing Large Language Models",
+      "title": "Demographic Fairness in Multimodal LLMs: A Benchmark of Gender and Ethnicity Bias in Face Verification",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.19144v1"
+      "url": "https://arxiv.org/abs/2603.25613v1"
     },
     {
       "rank": 4,
-      "title": "Parallelograms Strike Back: LLMs Generate Better Analogies than People",
+      "title": "EcoThink: A Green Adaptive Inference Framework for Sustainable and Accessible Agents",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.19066v1"
+      "url": "https://arxiv.org/abs/2603.25498v1"
     },
     {
       "rank": 5,
-      "title": "What Really Controls Temporal Reasoning in Large Language Models: Tokenisation or Representation of Time?",
+      "title": "Beyond Content Safety: Real-Time Monitoring for Reasoning Vulnerabilities in Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.19017v1"
+      "url": "https://arxiv.org/abs/2603.25412v1"
     }
   ]
 }
