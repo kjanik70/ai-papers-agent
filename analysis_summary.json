@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260327.md",
-  "date": "2026-03-27T20:19:43.722874",
+  "filename": "ai_papers_weekly_20260403.md",
+  "date": "2026-04-03T20:11:49.218020",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "R-C2: Cycle-Consistent Reinforcement Learning Improves Multimodal Reasoning",
+    "title": "Steerable Visual Representations",
     "score": 25,
-    "url": "https://arxiv.org/abs/2603.25720v1"
+    "url": "https://arxiv.org/abs/2604.02327v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "R-C2: Cycle-Consistent Reinforcement Learning Improves Multimodal Reasoning",
+      "title": "Steerable Visual Representations",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.25720v1"
+      "url": "https://arxiv.org/abs/2604.02327v1"
     },
     {
       "rank": 2,
-      "title": "Is Mathematical Problem-Solving Expertise in Large Language Models Associated with Assessment Performance?",
+      "title": "Batched Contextual Reinforcement: A Task-Scaling Law for Efficient Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.25633v1"
+      "url": "https://arxiv.org/abs/2604.02322v1"
     },
     {
       "rank": 3,
-      "title": "Demographic Fairness in Multimodal LLMs: A Benchmark of Gender and Ethnicity Bias in Face Verification",
+      "title": "Crystalite: A Lightweight Transformer for Efficient Crystal Modeling",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.25613v1"
+      "url": "https://arxiv.org/abs/2604.02270v1"
     },
     {
       "rank": 4,
-      "title": "EcoThink: A Green Adaptive Inference Framework for Sustainable and Accessible Agents",
+      "title": "Do Emotions in Prompts Matter? Effects of Emotional Framing on Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.25498v1"
+      "url": "https://arxiv.org/abs/2604.02236v1"
     },
     {
       "rank": 5,
-      "title": "Beyond Content Safety: Real-Time Monitoring for Reasoning Vulnerabilities in Large Language Models",
+      "title": "Answering the Wrong Question: Reasoning Trace Inversion for Abstention in LLMs",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2603.25412v1"
+      "url": "https://arxiv.org/abs/2604.02230v1"
     }
   ]
 }
