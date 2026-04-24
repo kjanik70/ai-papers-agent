@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260417.md",
-  "date": "2026-04-17T20:27:35.749257",
+  "filename": "ai_papers_weekly_20260424.md",
+  "date": "2026-04-24T20:17:33.562967",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Learning to Think Like a Cartoon Captionist: Incongruity-Resolution Supervision for Multimodal Humor Understanding",
+    "title": "Nemobot Games: Crafting Strategic AI Gaming Agents for Interactive Learning with Large Language Models",
     "score": 25,
-    "url": "https://arxiv.org/abs/2604.15210v1"
+    "url": "https://arxiv.org/abs/2604.21896v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Learning to Think Like a Cartoon Captionist: Incongruity-Resolution Supervision for Multimodal Humor Understanding",
+      "title": "Nemobot Games: Crafting Strategic AI Gaming Agents for Interactive Learning with Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.15210v1"
+      "url": "https://arxiv.org/abs/2604.21896v1"
     },
     {
       "rank": 2,
-      "title": "Compressing Sequences in the Latent Embedding Space: $K$-Token Merging for Large Language Models",
+      "title": "A Multimodal Text- and Graph-Based Approach for Open-Domain Event Extraction from Documents",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.15153v1"
+      "url": "https://arxiv.org/abs/2604.21885v1"
     },
     {
       "rank": 3,
-      "title": "LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking",
+      "title": "Transient Turn Injection: Exposing Stateless Multi-Turn Vulnerabilities in Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.15149v1"
+      "url": "https://arxiv.org/abs/2604.21860v1"
     },
     {
       "rank": 4,
-      "title": "IG-Search: Step-Level Information Gain Rewards for Search-Augmented Reasoning",
+      "title": "Stealthy Backdoor Attacks against LLMs Based on Natural Style Triggers",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.15148v1"
+      "url": "https://arxiv.org/abs/2604.21700v1"
     },
     {
       "rank": 5,
-      "title": "Discovering Novel LLM Experts via Task-Capability Coevolution",
+      "title": "GS-Quant: Granular Semantic and Generative Structural Quantization for Knowledge Graph Completion",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.14969v1"
+      "url": "https://arxiv.org/abs/2604.21649v1"
     }
   ]
 }
