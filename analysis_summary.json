@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260424.md",
-  "date": "2026-04-24T20:17:33.562967",
+  "filename": "ai_papers_weekly_20260501.md",
+  "date": "2026-05-01T20:36:10.178475",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Nemobot Games: Crafting Strategic AI Gaming Agents for Interactive Learning with Large Language Models",
+    "title": "LLM as Clinical Graph Structure Refiner: Enhancing Representation Learning in EEG Seizure Diagnosis",
     "score": 25,
-    "url": "https://arxiv.org/abs/2604.21896v1"
+    "url": "https://arxiv.org/abs/2604.28178v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Nemobot Games: Crafting Strategic AI Gaming Agents for Interactive Learning with Large Language Models",
+      "title": "LLM as Clinical Graph Structure Refiner: Enhancing Representation Learning in EEG Seizure Diagnosis",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.21896v1"
+      "url": "https://arxiv.org/abs/2604.28178v1"
     },
     {
       "rank": 2,
-      "title": "A Multimodal Text- and Graph-Based Approach for Open-Domain Event Extraction from Documents",
+      "title": "PRISM: Pre-alignment via Black-box On-policy Distillation for Multimodal Reinforcement Learning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.21885v1"
+      "url": "https://arxiv.org/abs/2604.28123v1"
     },
     {
       "rank": 3,
-      "title": "Transient Turn Injection: Exposing Stateless Multi-Turn Vulnerabilities in Large Language Models",
+      "title": "TopBench: A Benchmark for Implicit Prediction and Reasoning over Tabular Question Answering",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.21860v1"
+      "url": "https://arxiv.org/abs/2604.28076v1"
     },
     {
       "rank": 4,
-      "title": "Stealthy Backdoor Attacks against LLMs Based on Natural Style Triggers",
+      "title": "SpecVQA: A Benchmark for Spectral Understanding and Visual Question Answering in Scientific Images",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.21700v1"
+      "url": "https://arxiv.org/abs/2604.28039v1"
     },
     {
       "rank": 5,
-      "title": "GS-Quant: Granular Semantic and Generative Structural Quantization for Knowledge Graph Completion",
+      "title": "Design Structure Matrix Modularization with Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.21649v1"
+      "url": "https://arxiv.org/abs/2604.28018v1"
     }
   ]
 }
