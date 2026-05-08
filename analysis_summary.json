@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260501.md",
-  "date": "2026-05-01T20:36:10.178475",
+  "filename": "ai_papers_weekly_20260508.md",
+  "date": "2026-05-08T20:54:43.154392",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "LLM as Clinical Graph Structure Refiner: Enhancing Representation Learning in EEG Seizure Diagnosis",
+    "title": "Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key",
     "score": 25,
-    "url": "https://arxiv.org/abs/2604.28178v1"
+    "url": "https://arxiv.org/abs/2605.06638v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "LLM as Clinical Graph Structure Refiner: Enhancing Representation Learning in EEG Seizure Diagnosis",
+      "title": "Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.28178v1"
+      "url": "https://arxiv.org/abs/2605.06638v1"
     },
     {
       "rank": 2,
-      "title": "PRISM: Pre-alignment via Black-box On-policy Distillation for Multimodal Reinforcement Learning",
+      "title": "MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.28123v1"
+      "url": "https://arxiv.org/abs/2605.06623v1"
     },
     {
       "rank": 3,
-      "title": "TopBench: A Benchmark for Implicit Prediction and Reasoning over Tabular Question Answering",
+      "title": "UniSD: Towards a Unified Self-Distillation Framework for Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.28076v1"
+      "url": "https://arxiv.org/abs/2605.06597v1"
     },
     {
       "rank": 4,
-      "title": "SpecVQA: A Benchmark for Spectral Understanding and Visual Question Answering in Scientific Images",
+      "title": "NeuroAgent: LLM Agents for Multimodal Neuroimaging Analysis and Research",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.28039v1"
+      "url": "https://arxiv.org/abs/2605.06584v1"
     },
     {
       "rank": 5,
-      "title": "Design Structure Matrix Modularization with Large Language Models",
+      "title": "Patch-Effect Graph Kernels for LLM Interpretability",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2604.28018v1"
+      "url": "https://arxiv.org/abs/2605.06480v1"
     }
   ]
 }
