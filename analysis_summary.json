@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260515.md",
-  "date": "2026-05-15T20:24:57.257854",
+  "filename": "ai_papers_weekly_20260522.md",
+  "date": "2026-05-22T21:14:33.190340",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Text Knows What, Tables Know When: Clinical Timeline Reconstruction via Retrieval-Augmented Multimodal Alignment",
+    "title": "LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems",
     "score": 25,
-    "url": "https://arxiv.org/abs/2605.15168v1"
+    "url": "https://arxiv.org/abs/2605.22786v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Text Knows What, Tables Know When: Clinical Timeline Reconstruction via Retrieval-Augmented Multimodal Alignment",
+      "title": "LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.15168v1"
+      "url": "https://arxiv.org/abs/2605.22786v1"
     },
     {
       "rank": 2,
-      "title": "On the Cultural Anachronism and Temporal Reasoning in Vision Language Models",
+      "title": "Beyond Acoustic Emotion Recognition: Multimodal Pathos Analysis in Political Speech Using LLM-Based and Acoustic Emotion Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.15071v1"
+      "url": "https://arxiv.org/abs/2605.22732v1"
     },
     {
       "rank": 3,
-      "title": "TFGN: Task-Free, Replay-Free Continual Pre-Training Without Catastrophic Forgetting at LLM Scale",
+      "title": "AtelierEval: Agentic Evaluation of Humans & LLMs as Text-to-Image Prompters",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.15053v1"
+      "url": "https://arxiv.org/abs/2605.22645v1"
     },
     {
       "rank": 4,
-      "title": "SpeakerLLM: A Speaker-Specialized Audio-LLM for Speaker Understanding and Verification Reasoning",
+      "title": "Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.15044v1"
+      "url": "https://arxiv.org/abs/2605.22642v1"
     },
     {
       "rank": 5,
-      "title": "Case-Based Calibration of Adaptive Reasoning and Execution for LLM Tool Use",
+      "title": "VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.15041v1"
+      "url": "https://arxiv.org/abs/2605.22570v1"
     }
   ]
 }
