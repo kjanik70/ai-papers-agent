@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260522.md",
-  "date": "2026-05-22T21:14:33.190340",
+  "filename": "ai_papers_weekly_20260529.md",
+  "date": "2026-05-29T21:49:55.428491",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems",
+    "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
     "score": 25,
-    "url": "https://arxiv.org/abs/2605.22786v1"
+    "url": "https://arxiv.org/abs/2605.30348v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems",
+      "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.22786v1"
+      "url": "https://arxiv.org/abs/2605.30348v1"
     },
     {
       "rank": 2,
-      "title": "Beyond Acoustic Emotion Recognition: Multimodal Pathos Analysis in Political Speech Using LLM-Based and Acoustic Emotion Models",
+      "title": "Tiny but Trusted: Efficient Vision-Language Reasoning for Time-Series Anomaly Detection",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.22732v1"
+      "url": "https://arxiv.org/abs/2605.30344v1"
     },
     {
       "rank": 3,
-      "title": "AtelierEval: Agentic Evaluation of Humans & LLMs as Text-to-Image Prompters",
+      "title": "Unlocking the Working Memory of Large Language Models for Latent Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.22645v1"
+      "url": "https://arxiv.org/abs/2605.30343v1"
     },
     {
       "rank": 4,
-      "title": "Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning",
+      "title": "In-Context Reward Adaptation for Robust Preference Modeling",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.22642v1"
+      "url": "https://arxiv.org/abs/2605.30323v1"
     },
     {
       "rank": 5,
-      "title": "VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis",
+      "title": "MedCase-Structured: A Text-to-FHIR Dataset for Benchmarking Diagnostic Reasoning in Clinically Realistic EHR Settings",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.22570v1"
+      "url": "https://arxiv.org/abs/2605.30295v1"
     }
   ]
 }
