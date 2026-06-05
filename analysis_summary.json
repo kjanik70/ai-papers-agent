@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260529.md",
-  "date": "2026-05-29T21:49:55.428491",
+  "filename": "ai_papers_weekly_20260605.md",
+  "date": "2026-06-05T21:21:06.344812",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
+    "title": "Benchmark Everything Everywhere All at Once",
     "score": 25,
-    "url": "https://arxiv.org/abs/2605.30348v1"
+    "url": "https://arxiv.org/abs/2606.06462v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
+      "title": "Benchmark Everything Everywhere All at Once",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.30348v1"
+      "url": "https://arxiv.org/abs/2606.06462v1"
     },
     {
       "rank": 2,
-      "title": "Tiny but Trusted: Efficient Vision-Language Reasoning for Time-Series Anomaly Detection",
+      "title": "An Infectious Disease Spread Simulation Based on Large Language Model Decision Making",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.30344v1"
+      "url": "https://arxiv.org/abs/2606.06360v1"
     },
     {
       "rank": 3,
-      "title": "Unlocking the Working Memory of Large Language Models for Latent Reasoning",
+      "title": "Where Should Knowledge Enter? A Layered Framework for Knowledge Infusion in Multimodal Iterative Generative Mo",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.30343v1"
+      "url": "https://arxiv.org/abs/2606.06356v1"
     },
     {
       "rank": 4,
-      "title": "In-Context Reward Adaptation for Robust Preference Modeling",
+      "title": "Towards One-to-Many Temporal Grounding",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.30323v1"
+      "url": "https://arxiv.org/abs/2606.06294v1"
     },
     {
       "rank": 5,
-      "title": "MedCase-Structured: A Text-to-FHIR Dataset for Benchmarking Diagnostic Reasoning in Clinically Realistic EHR Settings",
+      "title": "DisasterBench: A Multimodal Benchmark for UAV-Based Disaster Response in Complex Environments",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2605.30295v1"
+      "url": "https://arxiv.org/abs/2606.06217v1"
     }
   ]
 }
