@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260605.md",
-  "date": "2026-06-05T21:21:06.344812",
+  "filename": "ai_papers_weekly_20260612.md",
+  "date": "2026-06-12T21:36:20.958347",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Benchmark Everything Everywhere All at Once",
+    "title": "Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning",
     "score": 25,
-    "url": "https://arxiv.org/abs/2606.06462v1"
+    "url": "https://arxiv.org/abs/2606.13607v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Benchmark Everything Everywhere All at Once",
+      "title": "Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.06462v1"
+      "url": "https://arxiv.org/abs/2606.13607v1"
     },
     {
       "rank": 2,
-      "title": "An Infectious Disease Spread Simulation Based on Large Language Model Decision Making",
+      "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.06360v1"
+      "url": "https://arxiv.org/abs/2606.13572v1"
     },
     {
       "rank": 3,
-      "title": "Where Should Knowledge Enter? A Layered Framework for Knowledge Infusion in Multimodal Iterative Generative Mo",
+      "title": "ReSum: Synergizing LLM Reasoning and Summarization with Reinforcement Learning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.06356v1"
+      "url": "https://arxiv.org/abs/2606.13316v1"
     },
     {
       "rank": 4,
-      "title": "Towards One-to-Many Temporal Grounding",
+      "title": "HYDRA-X: Native Unified Multimodal Models with Holistic Visual Tokenizers",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.06294v1"
+      "url": "https://arxiv.org/abs/2606.13289v1"
     },
     {
       "rank": 5,
-      "title": "DisasterBench: A Multimodal Benchmark for UAV-Based Disaster Response in Complex Environments",
+      "title": "From Verdict to Process: Agentic Reinforcement Learning for Multi-Stage Fact Verification",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.06217v1"
+      "url": "https://arxiv.org/abs/2606.13262v1"
     }
   ]
 }
