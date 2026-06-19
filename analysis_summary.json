@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260612.md",
-  "date": "2026-06-12T21:36:20.958347",
+  "filename": "ai_papers_weekly_20260619.md",
+  "date": "2026-06-19T21:12:32.873392",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning",
+    "title": "How Transparent is DiffusionGemma?",
     "score": 25,
-    "url": "https://arxiv.org/abs/2606.13607v1"
+    "url": "https://arxiv.org/abs/2606.20560v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning",
+      "title": "How Transparent is DiffusionGemma?",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.13607v1"
+      "url": "https://arxiv.org/abs/2606.20560v1"
     },
     {
       "rank": 2,
-      "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
+      "title": "LLM agent safety, multi-turn red-teaming, jailbreak benchmarks, adversarial robustness, safety-critical systems",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.13572v1"
+      "url": "https://arxiv.org/abs/2606.20408v1"
     },
     {
       "rank": 3,
-      "title": "ReSum: Synergizing LLM Reasoning and Summarization with Reinforcement Learning",
+      "title": "ELVA: Exploring Ranking-Driven Universal Multimodal Retrieval",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.13316v1"
+      "url": "https://arxiv.org/abs/2606.20280v1"
     },
     {
       "rank": 4,
-      "title": "HYDRA-X: Native Unified Multimodal Models with Holistic Visual Tokenizers",
+      "title": "Navigating Unreliable Parametric and Contextual Knowledge: Explicit Knowledge Conflict Resolution for LLM Inference",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.13289v1"
+      "url": "https://arxiv.org/abs/2606.20245v1"
     },
     {
       "rank": 5,
-      "title": "From Verdict to Process: Agentic Reinforcement Learning for Multi-Stage Fact Verification",
+      "title": "QMFOL: Benchmarking Large Language Model Reasoning via Quantifiable Monadic First-Order Logic Test Case Generation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.13262v1"
+      "url": "https://arxiv.org/abs/2606.20227v1"
     }
   ]
 }
