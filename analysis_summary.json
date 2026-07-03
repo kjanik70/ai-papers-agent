@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260626.md",
-  "date": "2026-06-26T21:13:06.132689",
+  "filename": "ai_papers_weekly_20260703.md",
+  "date": "2026-07-03T20:56:57.794119",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Autoregressive Boltzmann Generators",
+    "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
     "score": 25,
-    "url": "https://arxiv.org/abs/2606.27361v1"
+    "url": "https://arxiv.org/abs/2607.02509v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Autoregressive Boltzmann Generators",
+      "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.27361v1"
+      "url": "https://arxiv.org/abs/2607.02509v1"
     },
     {
       "rank": 2,
-      "title": "TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference",
+      "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.27161v1"
+      "url": "https://arxiv.org/abs/2607.02504v1"
     },
     {
       "rank": 3,
-      "title": "NuclearQAv2: A Structured Benchmark for Evaluating Domain-Science Competence in Large Language Models",
+      "title": "OrbitQuant: Data-Agnostic Quantization for Image and Video Diffusion Transformers",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.27047v1"
+      "url": "https://arxiv.org/abs/2607.02461v1"
     },
     {
       "rank": 4,
-      "title": "Auditing Framing-Sensitive Behavioral Instability in Large Language Models for Mental Health Interactions",
+      "title": "Automated grading of Linux/bash examinations using large language models: a four-level cognitive taxonomy approach",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.26982v1"
+      "url": "https://arxiv.org/abs/2607.02432v1"
     },
     {
       "rank": 5,
-      "title": "In-Context Model Predictive Generation: Open-Vocabulary Motion Synthesis from Language Models to Physics",
+      "title": "Enhancing Fitness Intelligence through Domain-Specific LLM Post-Training",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2606.26981v1"
+      "url": "https://arxiv.org/abs/2607.02118v1"
     }
   ]
 }
