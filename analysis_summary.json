@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260703.md",
-  "date": "2026-07-03T20:56:57.794119",
+  "filename": "ai_papers_weekly_20260710.md",
+  "date": "2026-07-10T20:56:49.514037",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+    "title": "Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance",
     "score": 25,
-    "url": "https://arxiv.org/abs/2607.02509v1"
+    "url": "https://arxiv.org/abs/2607.08602v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+      "title": "Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.02509v1"
+      "url": "https://arxiv.org/abs/2607.08602v1"
     },
     {
       "rank": 2,
-      "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
+      "title": "Cognitive-structured Multimodal Agent for Multimodal Understanding, Generation, and Editing",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.02504v1"
+      "url": "https://arxiv.org/abs/2607.08497v1"
     },
     {
       "rank": 3,
-      "title": "OrbitQuant: Data-Agnostic Quantization for Image and Video Diffusion Transformers",
+      "title": "Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.02461v1"
+      "url": "https://arxiv.org/abs/2607.08393v1"
     },
     {
       "rank": 4,
-      "title": "Automated grading of Linux/bash examinations using large language models: a four-level cognitive taxonomy approach",
+      "title": "WCog-VLA: A Dual-Level World-Cognitive Vision-Language-Action Model for End-to-End Autonomous Driving",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.02432v1"
+      "url": "https://arxiv.org/abs/2607.08375v1"
     },
     {
       "rank": 5,
-      "title": "Enhancing Fitness Intelligence through Domain-Specific LLM Post-Training",
+      "title": "FSD-VLN: Fast-Slow Dual-System Modeling for Aerial Long-Horizon Vision-Language Navigation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.02118v1"
+      "url": "https://arxiv.org/abs/2607.08359v1"
     }
   ]
 }
