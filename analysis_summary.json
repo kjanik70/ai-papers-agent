@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260710.md",
-  "date": "2026-07-10T20:56:49.514037",
+  "filename": "ai_papers_weekly_20260717.md",
+  "date": "2026-07-17T20:34:57.135080",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance",
+    "title": "Symbal: Detecting Systematic Misalignments in Model-Generated Captions",
     "score": 25,
-    "url": "https://arxiv.org/abs/2607.08602v1"
+    "url": "https://arxiv.org/abs/2607.15216v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance",
+      "title": "Symbal: Detecting Systematic Misalignments in Model-Generated Captions",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.08602v1"
+      "url": "https://arxiv.org/abs/2607.15216v1"
     },
     {
       "rank": 2,
-      "title": "Cognitive-structured Multimodal Agent for Multimodal Understanding, Generation, and Editing",
+      "title": "MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.08497v1"
+      "url": "https://arxiv.org/abs/2607.15205v1"
     },
     {
       "rank": 3,
-      "title": "Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning",
+      "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.08393v1"
+      "url": "https://arxiv.org/abs/2607.15202v1"
     },
     {
       "rank": 4,
-      "title": "WCog-VLA: A Dual-Level World-Cognitive Vision-Language-Action Model for End-to-End Autonomous Driving",
+      "title": "Mask-Aware Policy Gradients for Diffusion Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.08375v1"
+      "url": "https://arxiv.org/abs/2607.15200v1"
     },
     {
       "rank": 5,
-      "title": "FSD-VLN: Fast-Slow Dual-System Modeling for Aerial Long-Horizon Vision-Language Navigation",
+      "title": "Benchmarking Multimodal Large Language Models for Scientific Visualization Literacy",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.08359v1"
+      "url": "https://arxiv.org/abs/2607.15176v1"
     }
   ]
 }
