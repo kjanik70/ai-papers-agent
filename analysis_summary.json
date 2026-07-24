@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260717.md",
-  "date": "2026-07-17T20:34:57.135080",
+  "filename": "ai_papers_weekly_20260724.md",
+  "date": "2026-07-24T20:52:39.168259",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Symbal: Detecting Systematic Misalignments in Model-Generated Captions",
+    "title": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
     "score": 25,
-    "url": "https://arxiv.org/abs/2607.15216v1"
+    "url": "https://arxiv.org/abs/2607.21558v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Symbal: Detecting Systematic Misalignments in Model-Generated Captions",
+      "title": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.15216v1"
+      "url": "https://arxiv.org/abs/2607.21558v1"
     },
     {
       "rank": 2,
-      "title": "MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization",
+      "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.15205v1"
+      "url": "https://arxiv.org/abs/2607.21552v1"
     },
     {
       "rank": 3,
-      "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+      "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.15202v1"
+      "url": "https://arxiv.org/abs/2607.21482v1"
     },
     {
       "rank": 4,
-      "title": "Mask-Aware Policy Gradients for Diffusion Language Models",
+      "title": "Multimodal Pretraining for Generalizable EEG Representation Learning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.15200v1"
+      "url": "https://arxiv.org/abs/2607.21384v1"
     },
     {
       "rank": 5,
-      "title": "Benchmarking Multimodal Large Language Models for Scientific Visualization Literacy",
+      "title": "Scaling Up Formal Representation of Clinical Trial Protocols in Ensemble Logic Using LLMs: A Preliminary Study",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.15176v1"
+      "url": "https://arxiv.org/abs/2607.21307v1"
     }
   ]
 }
