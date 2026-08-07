@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260731.md",
-  "date": "2026-07-31T21:00:06.586163",
+  "filename": "ai_papers_weekly_20260807.md",
+  "date": "2026-08-07T20:20:30.920174",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "When Specifications Conflict: A Symmetry-Based Framework for Measuring LLM Preferences",
+    "title": "DASH: Divergence-Adaptive Supervision Horizons for On-Policy Self-Distillation of Reasoning Models",
     "score": 25,
-    "url": "https://arxiv.org/abs/2607.28384v1"
+    "url": "https://arxiv.org/abs/2608.06243v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "When Specifications Conflict: A Symmetry-Based Framework for Measuring LLM Preferences",
+      "title": "DASH: Divergence-Adaptive Supervision Horizons for On-Policy Self-Distillation of Reasoning Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.28384v1"
+      "url": "https://arxiv.org/abs/2608.06243v1"
     },
     {
       "rank": 2,
-      "title": "PathView-Bench: Can Multimodal Large Language Models Achieve Fine-grained Multiscale Understanding of Pathology Images?",
+      "title": "What Current AI Benchmarks Leave Unmeasured: Modality, Search, Citations, and Implications (for Safety Evaluations)",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.28318v1"
+      "url": "https://arxiv.org/abs/2608.06202v1"
     },
     {
       "rank": 3,
-      "title": "From Textual Requirements to Microservice Architectures - A Comprehensive Evaluation of LLM-Based Design Synthesis",
+      "title": "Contextual Information Policy Optimization for Search Agents",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.28307v1"
+      "url": "https://arxiv.org/abs/2608.06128v1"
     },
     {
       "rank": 4,
-      "title": "LLM-Guided Evolutionary Search for Constraint Model Reformulation to Improve Solver Efficiency",
+      "title": "Poli-Bias: Understanding and Measuring Large Language Model Biases in International Political Conflicts",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.28268v1"
+      "url": "https://arxiv.org/abs/2608.06123v1"
     },
     {
       "rank": 5,
-      "title": "OPLD: On-Policy Latent Distillation for Multimodal Reasoning",
+      "title": "ECHO: A Locally-Deployable Agentic Health Assistant with Temporal Memory, Safety Guardrails, and Speech Assessment",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2607.28154v1"
+      "url": "https://arxiv.org/abs/2608.06110v1"
     }
   ]
 }
