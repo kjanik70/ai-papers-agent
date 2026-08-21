@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260814.md",
-  "date": "2026-08-14T20:15:39.816876",
+  "filename": "ai_papers_weekly_20260821.md",
+  "date": "2026-08-21T20:00:44.101831",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "AaLLM: An End-to-End Analog Circuit Design Framework from Topology Generation to Sizing Using Large Language Models",
+    "title": "An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction",
     "score": 25,
-    "url": "https://arxiv.org/abs/2608.13472v1"
+    "url": "https://arxiv.org/abs/2608.20320v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "AaLLM: An End-to-End Analog Circuit Design Framework from Topology Generation to Sizing Using Large Language Models",
+      "title": "An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.13472v1"
+      "url": "https://arxiv.org/abs/2608.20320v1"
     },
     {
       "rank": 2,
-      "title": "MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classification",
+      "title": "Rule-Compliant Visual Spatial Planning for Multimodal Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.13463v1"
+      "url": "https://arxiv.org/abs/2608.20237v1"
     },
     {
       "rank": 3,
-      "title": "Reduced Matrix Multiplication: Input-Adaptive Matrix-Product Reduction for LLM Inference",
+      "title": "MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.13426v1"
+      "url": "https://arxiv.org/abs/2608.20202v1"
     },
     {
       "rank": 4,
-      "title": "StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems",
+      "title": "EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.13317v1"
+      "url": "https://arxiv.org/abs/2608.20055v1"
     },
     {
       "rank": 5,
-      "title": "Keep, Customize, or Exit: Default Design and Token Pricing in LLM Reasoning Services",
+      "title": "Towards general embodied intelligence: integrating large language models, knowledge bases, and reasoning capabilities to build the next generation of AI agents",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.13315v1"
+      "url": "https://arxiv.org/abs/2608.19794v1"
     }
   ]
 }
