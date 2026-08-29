@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260821.md",
-  "date": "2026-08-21T20:00:44.101831",
+  "filename": "ai_papers_weekly_20260829.md",
+  "date": "2026-08-29T02:55:13.494268",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction",
+    "title": "From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench",
     "score": 25,
-    "url": "https://arxiv.org/abs/2608.20320v1"
+    "url": "https://arxiv.org/abs/2608.27442v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction",
+      "title": "From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.20320v1"
+      "url": "https://arxiv.org/abs/2608.27442v1"
     },
     {
       "rank": 2,
-      "title": "Rule-Compliant Visual Spatial Planning for Multimodal Large Language Models",
+      "title": "BrailleBench: Investigating Multi-Criteria Braille Comprehension in Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.20237v1"
+      "url": "https://arxiv.org/abs/2608.27268v1"
     },
     {
       "rank": 3,
-      "title": "MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
+      "title": "STEP: State-Aware Task Estimation and Planning with Multi-Modal LLMs for Human-Robot Collaboration",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.20202v1"
+      "url": "https://arxiv.org/abs/2608.27225v1"
     },
     {
       "rank": 4,
-      "title": "EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models",
+      "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.20055v1"
+      "url": "https://arxiv.org/abs/2608.27142v1"
     },
     {
       "rank": 5,
-      "title": "Towards general embodied intelligence: integrating large language models, knowledge bases, and reasoning capabilities to build the next generation of AI agents",
+      "title": "Performance Foundations of Parallel & Distributed Reasoning Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.19794v1"
+      "url": "https://arxiv.org/abs/2608.27046v1"
     }
   ]
 }
