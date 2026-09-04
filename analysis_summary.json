@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260829.md",
-  "date": "2026-08-29T02:55:13.494268",
+  "filename": "ai_papers_weekly_20260904.md",
+  "date": "2026-09-04T21:56:06.005160",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench",
+    "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
     "score": 25,
-    "url": "https://arxiv.org/abs/2608.27442v1"
+    "url": "https://arxiv.org/abs/2609.04159v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench",
+      "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.27442v1"
+      "url": "https://arxiv.org/abs/2609.04159v1"
     },
     {
       "rank": 2,
-      "title": "BrailleBench: Investigating Multi-Criteria Braille Comprehension in Large Language Models",
+      "title": "CORE: Improving Compositional Reasoning in MLLM Embedding via Reranker Distillation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.27268v1"
+      "url": "https://arxiv.org/abs/2609.04083v1"
     },
     {
       "rank": 3,
-      "title": "STEP: State-Aware Task Estimation and Planning with Multi-Modal LLMs for Human-Robot Collaboration",
+      "title": "When Models Edit Too Much: On the Fidelity of Minimal Code Edits",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.27225v1"
+      "url": "https://arxiv.org/abs/2609.04061v1"
     },
     {
       "rank": 4,
-      "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
+      "title": "IRWOZ 2.0: A Large Language Model-driven Dialogue Dataset for Industrial Robot Conversations",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.27142v1"
+      "url": "https://arxiv.org/abs/2609.04030v1"
     },
     {
       "rank": 5,
-      "title": "Performance Foundations of Parallel & Distributed Reasoning Language Models",
+      "title": "Representational alignment yields generalizable safety in language models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2608.27046v1"
+      "url": "https://arxiv.org/abs/2609.04022v1"
     }
   ]
 }
