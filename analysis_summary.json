@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260904.md",
-  "date": "2026-09-04T21:56:06.005160",
+  "filename": "ai_papers_weekly_20260911.md",
+  "date": "2026-09-11T22:07:36.937519",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
+    "title": "RetroThinker: Enabling Retrospective Thinking in Speech LLMs",
     "score": 25,
-    "url": "https://arxiv.org/abs/2609.04159v1"
+    "url": "https://arxiv.org/abs/2609.11864v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
+      "title": "RetroThinker: Enabling Retrospective Thinking in Speech LLMs",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.04159v1"
+      "url": "https://arxiv.org/abs/2609.11864v1"
     },
     {
       "rank": 2,
-      "title": "CORE: Improving Compositional Reasoning in MLLM Embedding via Reranker Distillation",
+      "title": "Ecdysis: Efficient and Effective Training of Runtime Harnesses for LLM Agents",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.04083v1"
+      "url": "https://arxiv.org/abs/2609.11677v1"
     },
     {
       "rank": 3,
-      "title": "When Models Edit Too Much: On the Fidelity of Minimal Code Edits",
+      "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.04061v1"
+      "url": "https://arxiv.org/abs/2609.11607v1"
     },
     {
       "rank": 4,
-      "title": "IRWOZ 2.0: A Large Language Model-driven Dialogue Dataset for Industrial Robot Conversations",
+      "title": "X-AuT: Progressive Audio-Encoder Compression for Speech LLMs with Cross-Scale Distillation",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.04030v1"
+      "url": "https://arxiv.org/abs/2609.11412v1"
     },
     {
       "rank": 5,
-      "title": "Representational alignment yields generalizable safety in language models",
+      "title": "Beyond Confidence: Stability-Aware Test-Time Adaptation for LLM Reasoning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.04022v1"
+      "url": "https://arxiv.org/abs/2609.11393v1"
     }
   ]
 }
