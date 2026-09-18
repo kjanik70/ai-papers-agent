@@ -1,51 +1,52 @@
 {
-  "filename": "ai_papers_weekly_20260911.md",
-  "date": "2026-09-11T22:07:36.937519",
+  "filename": "ai_papers_weekly_20260918.md",
+  "date": "2026-09-18T22:03:00.269089",
   "paper_count": 5,
   "categories": [
+    "cs.LG",
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "RetroThinker: Enabling Retrospective Thinking in Speech LLMs",
+    "title": "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations",
     "score": 25,
-    "url": "https://arxiv.org/abs/2609.11864v1"
+    "url": "https://arxiv.org/abs/2609.20779v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "RetroThinker: Enabling Retrospective Thinking in Speech LLMs",
+      "title": "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.11864v1"
+      "url": "https://arxiv.org/abs/2609.20779v1"
     },
     {
       "rank": 2,
-      "title": "Ecdysis: Efficient and Effective Training of Runtime Harnesses for LLM Agents",
+      "title": "Fingerprinting Multimodal Large Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.11677v1"
+      "url": "https://arxiv.org/abs/2609.20457v1"
     },
     {
       "rank": 3,
-      "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+      "title": "KoNeoBench: A Curated Evaluation Dataset for LLM Understanding of Korean Neologisms",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.11607v1"
+      "url": "https://arxiv.org/abs/2609.19916v1"
     },
     {
       "rank": 4,
-      "title": "X-AuT: Progressive Audio-Encoder Compression for Speech LLMs with Cross-Scale Distillation",
+      "title": "PetriBench: Benchmarking LLM Reasoning over Dynamic State Spaces",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.11412v1"
+      "url": "https://arxiv.org/abs/2609.19883v1"
     },
     {
       "rank": 5,
-      "title": "Beyond Confidence: Stability-Aware Test-Time Adaptation for LLM Reasoning",
+      "title": "Digital Twins for Opinion Dynamics: A Generative LLM Framework for Social Networks",
       "score": 25,
-      "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.11393v1"
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2609.19913v1"
     }
   ]
 }
