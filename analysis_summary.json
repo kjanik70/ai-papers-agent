@@ -1,52 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260918.md",
-  "date": "2026-09-18T22:03:00.269089",
+  "filename": "ai_papers_weekly_20260925.md",
+  "date": "2026-09-25T22:42:36.085187",
   "paper_count": 5,
   "categories": [
-    "cs.LG",
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations",
+    "title": "A Living Benchmark for Information Retrieval from Electronic Health Records",
     "score": 25,
-    "url": "https://arxiv.org/abs/2609.20779v1"
+    "url": "https://arxiv.org/abs/2609.30205v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations",
+      "title": "A Living Benchmark for Information Retrieval from Electronic Health Records",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.20779v1"
+      "url": "https://arxiv.org/abs/2609.30205v1"
     },
     {
       "rank": 2,
-      "title": "Fingerprinting Multimodal Large Language Models",
+      "title": "SAGE: Mitigating Long-Horizon Reasoning Biases via Topological Guidance",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.20457v1"
+      "url": "https://arxiv.org/abs/2609.30192v1"
     },
     {
       "rank": 3,
-      "title": "KoNeoBench: A Curated Evaluation Dataset for LLM Understanding of Korean Neologisms",
+      "title": "GRASP: Generating, Revising, and Assessing for Strategic Planning with Agentic AI",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.19916v1"
+      "url": "https://arxiv.org/abs/2609.30147v1"
     },
     {
       "rank": 4,
-      "title": "PetriBench: Benchmarking LLM Reasoning over Dynamic State Spaces",
+      "title": "SciWalker: Synthesizing Scientific Coding Problems with Operator Graphs and Execution Feedback",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.19883v1"
+      "url": "https://arxiv.org/abs/2609.30054v1"
     },
     {
       "rank": 5,
-      "title": "Digital Twins for Opinion Dynamics: A Generative LLM Framework for Social Networks",
+      "title": "Style, Not Self: Surface Cues Explain Zero-Shot Code Attribution by Large Language Models",
       "score": 25,
-      "category": "cs.LG",
-      "url": "https://arxiv.org/abs/2609.19913v1"
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2609.30048v1"
     }
   ]
 }
