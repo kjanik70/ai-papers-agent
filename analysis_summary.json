@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20260925.md",
-  "date": "2026-09-25T22:42:36.085187",
+  "filename": "ai_papers_weekly_20261002.md",
+  "date": "2026-10-02T23:24:20.698984",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "A Living Benchmark for Information Retrieval from Electronic Health Records",
+    "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
     "score": 25,
-    "url": "https://arxiv.org/abs/2609.30205v1"
+    "url": "https://arxiv.org/abs/2610.02117v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "A Living Benchmark for Information Retrieval from Electronic Health Records",
+      "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.30205v1"
+      "url": "https://arxiv.org/abs/2610.02117v1"
     },
     {
       "rank": 2,
-      "title": "SAGE: Mitigating Long-Horizon Reasoning Biases via Topological Guidance",
+      "title": "CARM: Cancellation-Aware Response Masking for LLM Reinforcement Learning",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.30192v1"
+      "url": "https://arxiv.org/abs/2610.02039v1"
     },
     {
       "rank": 3,
-      "title": "GRASP: Generating, Revising, and Assessing for Strategic Planning with Agentic AI",
+      "title": "SPHERE: Adaptive VR Indoor Scene Generation via LLM-Enhanced Spatial Preference Learning and Human-in-the-Loop RL",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.30147v1"
+      "url": "https://arxiv.org/abs/2610.02023v1"
     },
     {
       "rank": 4,
-      "title": "SciWalker: Synthesizing Scientific Coding Problems with Operator Graphs and Execution Feedback",
+      "title": "Counting Moves, Weighing Voices: Bayesian Dialectical Argumentation for Calibrated Multi-LLM Councils under Persistent Adversaries",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.30054v1"
+      "url": "https://arxiv.org/abs/2610.02005v1"
     },
     {
       "rank": 5,
-      "title": "Style, Not Self: Surface Cues Explain Zero-Shot Code Attribution by Large Language Models",
+      "title": "Mem++: Non-Destructive Memory for Long-Term Organizational LLM Agents",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.30048v1"
+      "url": "https://arxiv.org/abs/2610.02002v1"
     }
   ]
 }
