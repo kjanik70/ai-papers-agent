@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20261002.md",
-  "date": "2026-10-02T23:24:20.698984",
+  "filename": "ai_papers_weekly_20261009.md",
+  "date": "2026-10-09T23:47:51.007885",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
+    "title": "GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving",
     "score": 25,
-    "url": "https://arxiv.org/abs/2610.02117v1"
+    "url": "https://arxiv.org/abs/2610.12391v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
+      "title": "GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.02117v1"
+      "url": "https://arxiv.org/abs/2610.12391v1"
     },
     {
       "rank": 2,
-      "title": "CARM: Cancellation-Aware Response Masking for LLM Reinforcement Learning",
+      "title": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.02039v1"
+      "url": "https://arxiv.org/abs/2610.12361v1"
     },
     {
       "rank": 3,
-      "title": "SPHERE: Adaptive VR Indoor Scene Generation via LLM-Enhanced Spatial Preference Learning and Human-in-the-Loop RL",
+      "title": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.02023v1"
+      "url": "https://arxiv.org/abs/2610.12304v1"
     },
     {
       "rank": 4,
-      "title": "Counting Moves, Weighing Voices: Bayesian Dialectical Argumentation for Calibrated Multi-LLM Councils under Persistent Adversaries",
+      "title": "DVD: Dynamic Vector Decoding for Efficient MLLM-based Perception",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.02005v1"
+      "url": "https://arxiv.org/abs/2610.12266v1"
     },
     {
       "rank": 5,
-      "title": "Mem++: Non-Destructive Memory for Long-Term Organizational LLM Agents",
+      "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.02002v1"
+      "url": "https://arxiv.org/abs/2610.12183v1"
     }
   ]
 }
