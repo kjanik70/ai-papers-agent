@@ -1,51 +1,51 @@
 {
-  "filename": "ai_papers_weekly_20261009.md",
-  "date": "2026-10-09T23:47:51.007885",
+  "filename": "ai_papers_weekly_20261016.md",
+  "date": "2026-10-16T22:07:15.384932",
   "paper_count": 5,
   "categories": [
     "cs.AI"
   ],
   "avg_score": 25.0,
   "top_paper": {
-    "title": "GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving",
+    "title": "Discovering state-of-the-art quantum circuits with large language models",
     "score": 25,
-    "url": "https://arxiv.org/abs/2610.12391v1"
+    "url": "https://arxiv.org/abs/2610.22367v1"
   },
   "papers": [
     {
       "rank": 1,
-      "title": "GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving",
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.12391v1"
+      "url": "https://arxiv.org/abs/2610.22367v1"
     },
     {
       "rank": 2,
-      "title": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
+      "title": "Designing Transformers for Continuous Diffusion Language Models",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.12361v1"
+      "url": "https://arxiv.org/abs/2610.22330v1"
     },
     {
       "rank": 3,
-      "title": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
+      "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.12304v1"
+      "url": "https://arxiv.org/abs/2610.22316v1"
     },
     {
       "rank": 4,
-      "title": "DVD: Dynamic Vector Decoding for Efficient MLLM-based Perception",
+      "title": "AI Consilium: a Benchmark of LLM Clinical Multidisciplinary Second Opinions",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.12266v1"
+      "url": "https://arxiv.org/abs/2610.22298v1"
     },
     {
       "rank": 5,
-      "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
+      "title": "Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries",
       "score": 25,
       "category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.12183v1"
+      "url": "https://arxiv.org/abs/2610.22273v1"
     }
   ]
 }
